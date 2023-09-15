@@ -19,6 +19,19 @@
             padding: 20px;
         }
 
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .profile-picture {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
         h1 {
             font-size: 36px;
             margin-bottom: 10px;
@@ -46,14 +59,6 @@
             color: #0077b5;
             text-decoration: none;
         }
-
-        /* Profile picture styling */
-        .profile-picture {
-            max-width: 150px;
-            border-radius: 50%;
-            margin: 10px auto;
-            display: block;
-        }
     </style>
 </head>
 <body>
@@ -63,13 +68,18 @@
     </header>
 
     <div class="container">
-        <!-- Profile Picture -->
-        <img class="profile-picture" src="https://avatars.githubusercontent.com/u/83675502?v=4" alt="Dr. Mohamed Elsenent's Profile Picture">
-        
-        <h2>About Me</h2>
-        <p>
-            Dr. Mohamed Elsenent is a renowned scientist known for his groundbreaking research in the field of [Your field of expertise]. With a passion for discovery and innovation, Dr. Elsenent has made significant contributions to the scientific community.
-        </p>
+        <div class="profile">
+            <!-- Profile Picture -->
+            <img class="profile-picture" src="https://avatars.githubusercontent.com/u/83675502?v=4" alt="Dr. Mohamed Elsenent's Profile Picture">
+            
+            <!-- Name and About Me -->
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    Dr. Mohamed Elsenent is a renowned scientist known for his groundbreaking research in the field of [Your field of expertise]. With a passion for discovery and innovation, Dr. Elsenent has made significant contributions to the scientific community.
+                </p>
+            </div>
+        </div>
 
         <h2>Research Interests</h2>
         <ul>
