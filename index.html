@@ -9034,6 +9034,33 @@
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Replace 'YOUR_GOOGLE_SCHOLAR_PROFILE_URL' with the URL to your Google Scholar profile
+        var profileUrl = 'https://scholar.google.com.eg/citations?user=fvLZ67wAAAAJ';
+
+        // Send a request to your Google Scholar profile page
+        $.ajax({
+            url: profileUrl,
+            dataType: 'html',
+            success: function (data) {
+                // Parse the HTML content to find the relevant information
+                var hIndex = $(data).find('#gsc_rsb_st td.gsc_rsb_std:nth-child(3)').text();
+                var i10Index = $(data).find('#gsc_rsb_st td.gsc_rsb_std:nth-child(4)').text();
+                var citations = $(data).find('.gsc_rsb_std').first().text();
+                var numDocuments = $(data).find('.gsc_rsb_std').eq(1).text();
+
+                // Update the information on your page
+                $('#hIndex').text(hIndex);
+                $('#i10Index').text(i10Index);
+                $('#citations').text(citations);
+                $('#numDocuments').text(numDocuments);
+            }
+        });
+    });
+</script>
+
     <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
     <base target="_blank">
 </head>
@@ -9297,6 +9324,20 @@ acadmy, Egypt.
                 </ul>
             </div>
         </div>
+        
+        <div>
+ 
+         <h4 class="resume-skills-cat font-weight-bold">Scintific Progress</h4>
+    <p>
+  
+        h-index: <span id="hIndex">X</span><br>
+        i10-index: <span id="i10Index">Y</span><br>
+        Citations: <span id="citations">Z</span><br>
+        Number of Documents: <span id="numDocuments">N</span>
+   
+    </p>
+</div>
+
     </section>
   
     <section class="resume-section reference-section mb-5">
