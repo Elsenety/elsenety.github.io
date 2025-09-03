@@ -1,0 +1,28 @@
+:root {
+  --accent: #0ea5a5; /* teal-ish */
+  --bs-primary: var(--accent);
+  --radius: 1rem;
+}
+* { font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; }
+h1, h2, h3, h4, h5 { font-family: 'Merriweather', serif; }
+
+.hero {
+  background: linear-gradient(135deg, rgba(14,165,165,.10), rgba(14,165,165,.02));
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.card { border-radius: var(--radius); }
+img.rounded-4, .rounded-4 { border-radius: var(--radius) !important; }
+
+.section-title {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(0,0,0,.15);
+}
+
+.gallery-card img { cursor: pointer; transition: transform .2s ease; }
+.gallery-card img:hover { transform: scale(1.02); }
+
+footer { background: rgba(0,0,0,.02); }
+
+/* Fine-tune links in dark mode */
+html[data-bs-theme="dark"] footer { background: rgba(255,255,255,.02); }
