@@ -1,96 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potential of Imidazole-Based Organic Dyes in DSSCs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #4CAF50;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1, h2, h3 {
-            margin: 10px 0;
-        }
-        p {
-            margin: 15px 0;
-        }
-        .container {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center; /* Centering the content within the container */
-        }
-        .button {
-            margin-top: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #777;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Academic CV of Dr. Mohamed Elsenety: appointments, education, publications, grants, and teaching activities.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png">
+    
+        <style>
+      .pub-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+      }
+      .pub-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      }
+      .pub-image {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .modal-image {
+        width: 100%;
+        max-height: 70vh;
+        object-fit: contain;
+      }
+      .pub-badge {
+        font-size: 0.8rem;
+      }
+      .social-links a {
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+      .social-links a:hover {
+        opacity: 0.8;
+      }
+      .google-scholar-icon {
+        color: #4285F4;
+      }
+      .orcid-icon {
+        color: #A6CE39;
+      }
+      .ppus-icon {
+        color: #E9710E;
+      }
+      .researchgate-icon {
+        color: #00CCBB;
+      }
     </style>
+    
+    
 </head>
-<body>
+<body data-page="cv">
 
-<header>
-    <h1>Design and Predict the Potential of Imidazole-Based Organic Dyes in Dye-Sensitized Solar Cells</h1>
-    <h2>Using Fingerprint Machine Learning </h2>
-</header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="ml.html">ML Apps</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/Mohamed_Elsenety_CV.pdf" download>Download CV</a>-->
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle">🌓</button>
+      </div>
+    </div>
+  </div>
+</nav>
 
-<div class="container">
-    <h3>Mohamed M. Elsenety</h3>
-    <p>Department of Chemistry, Faculty of Science, Al-Azhar University, Nasr City, Cairo, 11884, Egypt</p>
-
-    <h3>Aim</h3>
-
-    <p>
-        In this study, we propose a machine learning-based approach to accelerate the discovery process by predicting the photovoltaic performance of imidazole-based organic dyes. Machine learning predictions provide valuable insights into the expected PCE% and behaviors of the molecules toward DSSCs. Based on the RDKit library, several fingerprints such as Molecular ACCess System (MACCS), Avalon (Av), Daylight, Pharmacophore, and Morgan with different radius (r2, r3, r4) were studied. 
-    </p>
-	
-    <h3>More information will be coming soon.</h3>
-
-    <p>
-        <h3>User guide will be coming soon.</h3> 
-    </p>
-
-    <!-- Button added here -->
-    <button class="button" onclick="window.location.href='https://dssc-elsenety.streamlit.app/'">Run DSSC Model</button>
-
-    <h3>Future Work</h3>
-    <p>
-        Future research will focus on optimizing the molecular structures further and exploring additional dye candidates.
-    </p>
-
-    <h3>References</h3>
-    <p>
-
-    </p>
+<!--  Content -->
+<!-- Web App Card for the DSSC Model -->
+<div class="col-md-6 my-4">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">
+        Imidazole-Based Dye PCE % in DSSCs Predictor
+        <span class="badge text-bg-info ms-2">Web App</span>
+      </h5>
+      <p class="card-text">
+        Based on <em>Elsenety et al., Sci Rep 2024</em>, this tool predicts power-conversion efficiency (PCE%) of imidazole dyes in DSSCs using machine learning and molecular fingerprints.
+      </p>
+      <ul class="list-unstyled small text-muted mb-3">
+        <li><strong>Input:</strong> SMILES string</li>
+        <li><strong>Algorithm:</strong> MLPRegressor (deep neural net) using Daylight fingerprint</li>
+        <!--<li><strong>Performance:</strong> ~50% PCE boost—MK2 to MK2-DM1 (7.70% → 11.49%)</li>-->
+        <!--<li><strong>Validation:</strong> Confirmed via DFT for oscillator strength & charge transfer</li>-->
+      </ul>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="#" class="btn btn-outline-secondary btn-sm disabled">Model Info</a>
+        <a href="https://dssc-elsenety.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">Launch App</a>
+        <a href="https://doi.org/10.1038/s41598-024-76739-6" target="_blank" class="btn btn-outline-primary btn-sm">Read Paper</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<footer>
-    &copy; 2024 Mohamed M. Elsenety. All Rights Reserved, Email: m.elsenety@azhar.ed.eg
-</footer>
+  <section class="container my-5">
+  <h2 class="section-title">Quick Guide: Input Options for PCE Prediction</h2>
+  <div class="row g-4">
 
+    <!-- Option 1: SMILES input -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/img/imid/1.png" class="card-img-top" alt="SMILES Input Example">
+        <div class="card-body">
+          <h6 class="card-title">Option 1: SMILES Format</h6>
+          <p class="card-text small text-muted">
+            Draw your dye in a chemical editor (e.g., ChemDraw, RDKit) and copy its SMILES notation.
+            Paste the <strong>SMILES string</strong> of your dye molecule directly into the input box.  
+            Example: <code>O=C(O)C1=CC=CN=C1</code>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 2: Drawing tool -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/img/imid/2.png" class="card-img-top" alt="Chemical Drawing Tool Example">
+        <div class="card-body">
+          <h6 class="card-title">Option 2: Chemical Drawing Tool</h6>
+          <p class="card-text small text-muted">
+            Use the <strong>built-in drawing canvas</strong> with multi-optional tools to sketch your molecule.  
+            The system automatically converts your drawing into SMILES for prediction.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 3: Batch screening -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/img/imid/3.png" class="card-img-top" alt="Batch Screening Example">
+        <div class="card-body">
+          <h6 class="card-title">Option 3: Batch Screening</h6>
+          <p class="card-text small text-muted">
+            Import multiple SMILES strings from a <strong>.txt file</strong> or paste them line by line.  
+            This allows efficient <strong>high-throughput screening</strong> of large molecular databases.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <footer class="mt-5 border-top">
+      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
+        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
+        <span class="social-links">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ&hl=ar" class="me-3" target="_blank" title="Google Scholar">
+            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
+          </a>
+          <a href="https://orcid.org/0000-0001-5107-5959" class="me-3" target="_blank" title="ORCID">
+            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
+          </a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" class="me-3" target="_blank" title="Scopus">
+            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
+          </a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate">
+            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
+          </a>
+        </span>
+      </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
