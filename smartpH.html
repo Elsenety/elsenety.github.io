@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart_pH | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Smart_pH: Universal pH Estimation via Artificial Neural Networks Based on Multi-Source Colorimetric Analysis. Developed by Dr. Mohamed Elsenety.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <style>
+    .pub-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    .pub-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+    .pub-image {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .modal-image {
+      width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+    .pub-badge {
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body data-page="smartph">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="ml.html">ML Apps</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/Mohamed_Elsenety_CV.pdf" download>Download CV</a>-->
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle">🌓</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Smart_pH Project Card -->
+<div class="container my-5">
+  <div class="card shadow-sm border-0">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-5">
+        <img src="assets/img/smartph/smartph.png" class="img-fluid rounded-start" alt="Smart_pH App Preview">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h3 class="card-title fw-bold">Smart_pH: Universal pH Estimation via Artificial Neural Networks</h3>
+          <p class="card-text text-muted">
+            Smart_pH is a smartphone-based colorimetric analysis system powered by Artificial Neural Networks (ANNs) for fast, accurate, and universal estimation of pH values from indicator strips.  
+            The app integrates image processing, machine learning, and a multi-source dataset to ensure robust predictions under diverse lighting and camera conditions.
+          </p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Platform:</strong> Android (Google Play Store)</li>
+            <li><strong>Input:</strong> Image of pH indicator strip (captured or uploaded)</li>
+            <li><strong>Output:</strong> Predicted pH value with visualization and accuracy indicator</li>
+            <li><strong>Model:</strong> Artificial Neural Network (ANN) trained on multi-source RGB datasets</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="https://play.google.com/store/apps/details?id=elsenety.yallascience.smartph" target="_blank" class="btn btn-primary btn-sm">
+              <i class="bi bi-google-play me-1"></i> Download on Google Play
+            </a>
+            <a href="" target="_blank" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-globe me-1"></i> Scintific Pepe : soon
+            </a>
+            <a href="mailto:m.elsenety@azhar.edu.eg" class="btn btn-outline-primary btn-sm">
+              <i class="bi bi-envelope me-1"></i> Contact Corresponding Author
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quick Guide Section -->
+<section class="container my-5">
+  <h4 class="section-title mb-4 text-center fw-bold">Quick Guide: How to Use Smart_pH</h4>
+  <div class="row g-4">
+    <!-- Step 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/img/smartph/pH_2.png" class="card-img-top" alt="Step 1">
+        <div class="card-body">
+          <h6 class="card-title">1. Capture or Upload Image</h6>
+          <p class="card-text small text-muted">
+            Open the app and either take a photo of your pH indicator strip using your camera or upload an existing image from your gallery.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Step 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/img/smartph/pH_3.png" class="card-img-top" alt="Step 2">
+        <div class="card-body">
+          <h6 class="card-title">2. Adjust Color Boxes</h6>
+          <p class="card-text small text-muted">
+            Manually drag and position the four color selection boxes to align precisely with your indicator blocks for accurate RGB extraction.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Step 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/img/smartph/pH_4.png" class="card-img-top" alt="Step 3">
+        <div class="card-body">
+          <h6 class="card-title">3. Predict pH Value</h6>
+          <p class="card-text small text-muted">
+            Press <strong>“Predict”</strong> to analyze the colors via the trained ANN model.  
+            The predicted pH value will be displayed with a confidence indicator.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+    <footer class="mt-5 border-top">
+      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
+        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
+        <span class="social-links">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ&hl=ar" class="me-3" target="_blank" title="Google Scholar">
+            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
+          </a>
+          <a href="https://orcid.org/0000-0001-5107-5959" class="me-3" target="_blank" title="ORCID">
+            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
+          </a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" class="me-3" target="_blank" title="Scopus">
+            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
+          </a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate">
+            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
+          </a>
+        </span>
+      </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
