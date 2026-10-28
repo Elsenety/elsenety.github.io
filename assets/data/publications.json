@@ -1,0 +1,1097 @@
+﻿{
+    "author":  "Dr. Mohamed Elsenety",
+    "orcid":  "0000-0001-5107-5959",
+    "scholar":  "https://scholar.google.com/citations?user=fvLZ67wAAAAJ",
+    "scopus":  "57188750324",
+    "last_updated":  "2026-10-27",
+    "total_count":  75,
+    "publications":  [
+                         {
+                             "id":  230189689,
+                             "title":  "Cyano functionalization of quinone-based conjugated microporous polymers for enhanced wettability, charge transport, and supercapacitive performance",
+                             "journal":  "Chemical Engineering Journal",
+                             "year":  2026,
+                             "month":  11,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.cej.2026.179718",
+                             "url":  "https://doi.org/10.1016/j.cej.2026.179718",
+                             "topics":  [
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  230189696,
+                             "title":  "Biogenic synthesized Alginate@Keratin@MgO nanocomposite beads from agricultural waste for efficient dye remediation: Mechanistic insights and advanced predictive modeling",
+                             "journal":  "Colloids and Surfaces A: Physicochemical and Engineering Aspects",
+                             "year":  2026,
+                             "month":  11,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.colsurfa.2026.141324",
+                             "url":  "https://doi.org/10.1016/j.colsurfa.2026.141324",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI",
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  229812250,
+                             "title":  "Raman and infrared spectra, novel normal coordinate analysis, vibrational assignments and DFT calculations of hybrid perovskites: trimethyl sulfonium lead halides",
+                             "journal":  "Zeitschrift für Physikalische Chemie",
+                             "year":  2026,
+                             "month":  10,
+                             "day":  14,
+                             "type":  "journal-article",
+                             "doi":  "10.1515/zpch-2025-0115",
+                             "url":  "https://doi.org/10.1515/zpch-2025-0115",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  230189570,
+                             "title":  "Nitrogen- and sulfur-doped triphenylbenzene-based hyper cross-linked polymers for high-performance CO2 adsorption",
+                             "journal":  "Polymer",
+                             "year":  2026,
+                             "month":  10,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.polymer.2026.130636",
+                             "url":  "https://doi.org/10.1016/j.polymer.2026.130636",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  230189589,
+                             "title":  "Highly efficient triptycene-based hypercrosslinked polymers (HCPs) for selective CO2 capture",
+                             "journal":  "Microporous and Mesoporous Materials",
+                             "year":  2026,
+                             "month":  10,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.micromeso.2026.114331",
+                             "url":  "https://doi.org/10.1016/j.micromeso.2026.114331",
+                             "topics":  [
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  226871442,
+                             "title":  "A Facile Green Synthesis of Polyethyleneimine-Functionalized Graphene Oxide Frameworks with Enhanced CO₂ Capture and Selectivity",
+                             "journal":  "",
+                             "year":  2026,
+                             "month":  9,
+                             "day":  16,
+                             "type":  "preprint",
+                             "doi":  "10.21203/rs.3.rs-10830102/v1",
+                             "url":  "https://doi.org/10.21203/rs.3.rs-10830102/v1",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  230189580,
+                             "title":  "Adsorption of some metal ions from wastewater using a novel composite of recycled chitosan and hydroxyapatite",
+                             "journal":  "Scientific Reports",
+                             "year":  2026,
+                             "month":  8,
+                             "day":  5,
+                             "type":  "journal-article",
+                             "doi":  "10.1038/s41598-026-64119-1",
+                             "url":  "https://doi.org/10.1038/s41598-026-64119-1",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  230189697,
+                             "title":  "Humidity-induced degradation kinetics of MAPbI3 perovskite films with machine learning insights",
+                             "journal":  "Solid State Sciences",
+                             "year":  2026,
+                             "month":  8,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.solidstatesciences.2026.108350",
+                             "url":  "https://doi.org/10.1016/j.solidstatesciences.2026.108350",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "Machine Learning \u0026 AI",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  213176696,
+                             "title":  "Enhanced Hydrogen Storage in Metal Organic Framework/Graphene Oxide Composites: Experimental Characterization and Molecular Simulations",
+                             "journal":  "Langmuir",
+                             "year":  2026,
+                             "month":  5,
+                             "day":  12,
+                             "type":  "journal-article",
+                             "doi":  "10.1021/acs.langmuir.6c01098",
+                             "url":  "https://doi.org/10.1021/acs.langmuir.6c01098",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  213333098,
+                             "title":  "Deciphering of Cytotoxicity in Fungal-Derived Cytochalasans Using a Deep Neural Network Framework Supported by Molecular Docking and Molecular Dynamic Simulations",
+                             "journal":  "Journal of Computational Biophysics and Chemistry",
+                             "year":  2026,
+                             "month":  4,
+                             "day":  30,
+                             "type":  "journal-article",
+                             "doi":  "10.1142/S273741652650078X",
+                             "url":  "https://doi.org/10.1142/S273741652650078X",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  206225386,
+                             "title":  "Modelling and optimization of cadmium adsorption using dead Pseudomonas biomass isolates from brassware effluents using Box-Behnken Design and Artificial Neural Networks",
+                             "journal":  "Next Materials",
+                             "year":  2026,
+                             "month":  4,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.nxmate.2026.101660",
+                             "url":  "http://dx.doi.org/10.1016/j.nxmate.2026.101660",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  206225406,
+                             "title":  "Green synthesis and advanced modeling of yttrium oxide nanoparticles for efficient antimony removal from contaminated water",
+                             "journal":  "Journal of Water Process Engineering",
+                             "year":  2026,
+                             "month":  3,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jwpe.2026.109646",
+                             "url":  "http://dx.doi.org/10.1016/j.jwpe.2026.109646",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  199360676,
+                             "title":  "Ambient, parts-per-billion formic acid capture and quantification with a covalent-organic-framework–coated quartz crystal microbalance",
+                             "journal":  "Separation and Purification Technology",
+                             "year":  2026,
+                             "month":  3,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.seppur.2025.136349",
+                             "url":  "http://dx.doi.org/10.1016/j.seppur.2025.136349",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  199739136,
+                             "title":  "Synthesis of Ta2O5@rGO nanohybrid via a unique one-step hydrothermal approach as an efficient separator modifier for lithium-sulfur batteries",
+                             "journal":  "Journal of Power Sources",
+                             "year":  2026,
+                             "month":  2,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jpowsour.2025.239043",
+                             "url":  "http://dx.doi.org/10.1016/j.jpowsour.2025.239043",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  230189560,
+                             "title":  "Node engineering unlocks fully conjugated three-dimensional covalent organic frameworks for long-wavelength visible-light-driven hydrogen evolution",
+                             "journal":  "Green Chemistry",
+                             "year":  2026,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1039/d6gc04645b",
+                             "url":  "https://doi.org/10.1039/d6gc04645b",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  199911434,
+                             "title":  "MIL-88A(Fe) as partially-transformative chemically- and physically-active substrate in synthesizing MIL-88A(Fe)/BiOI:Fe with super-adsorption and boosted photocatalysis",
+                             "journal":  "Journal of Alloys and Compounds",
+                             "year":  2025,
+                             "month":  12,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jallcom.2025.185620",
+                             "url":  "http://dx.doi.org/10.1016/j.jallcom.2025.185620",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  195850232,
+                             "title":  "An innovative one-step hydrothermal approach for fabricating Ta2O5/WS2@rGO heterostructure as a coated separator for Li–S batteries",
+                             "journal":  "Materials Today Chemistry",
+                             "year":  2025,
+                             "month":  12,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.mtchem.2025.103136",
+                             "url":  "http://dx.doi.org/10.1016/j.mtchem.2025.103136",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  199360965,
+                             "title":  "Molecular engineering of multifunctional benzothiazole-sulfonamide hybrids: from synthesis to optoelectronic applications",
+                             "journal":  "Photochemical \u0026amp; Photobiological Sciences",
+                             "year":  2025,
+                             "month":  11,
+                             "day":  19,
+                             "type":  "journal-article",
+                             "doi":  "10.1007/s43630-025-00786-9",
+                             "url":  "http://dx.doi.org/10.1007/s43630-025-00786-9",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  188871706,
+                             "title":  "Mesoporous violarite FeNi2S4 nanosheets as a high-performance adsorbent for selective recovery of Au(III) ions",
+                             "journal":  "Inorganic Chemistry Communications",
+                             "year":  2025,
+                             "month":  11,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.inoche.2025.115155",
+                             "url":  "https://doi.org/10.1016/j.inoche.2025.115155",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  190618329,
+                             "title":  "Sustainable hexavalent chromium removal from aqueous solutions using novel plant-based biocoagulants: Comparative performance, mechanism elucidation, and economic evaluation",
+                             "journal":  "Sustainable Chemistry and Pharmacy",
+                             "year":  2025,
+                             "month":  10,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.scp.2025.102168",
+                             "url":  "https://doi.org/10.1016/j.scp.2025.102168",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  188457856,
+                             "title":  "Ferrite-based nanomaterials for photocatalytic CO₂ reduction: Synthesis, properties, and mechanistic insights",
+                             "journal":  "Journal of CO2 Utilization",
+                             "year":  2025,
+                             "month":  10,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jcou.2025.103175",
+                             "url":  "https://doi.org/10.1016/j.jcou.2025.103175",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  191897073,
+                             "title":  "High‐Throughput Deep Learning Prediction of D‐π‐A Dye Absorption Maxima on Titania Surfaces",
+                             "journal":  "ChemistrySelect",
+                             "year":  2025,
+                             "month":  9,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1002/slct.202501556",
+                             "url":  "https://doi.org/10.1002/slct.202501556",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI"
+                                        ]
+                         },
+                         {
+                             "id":  186574963,
+                             "title":  "Assessing the performance of perovskite solar cells under Peltier cooling",
+                             "journal":  "Microelectronic Engineering",
+                             "year":  2025,
+                             "month":  9,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.mee.2025.112364",
+                             "url":  "https://doi.org/10.1016/j.mee.2025.112364",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  186567767,
+                             "title":  "Air stable lead free ((CH3)3S)3M2I9 (M = Bi, Sb) perovskites",
+                             "journal":  "Inorganic Chemistry Communications",
+                             "year":  2025,
+                             "month":  9,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.inoche.2025.114739",
+                             "url":  "https://doi.org/10.1016/j.inoche.2025.114739",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  188439168,
+                             "title":  "Flexible, Non-fused Sulfone Functionalized Polymer with Enhanced Active Site Access for Photocatalytic Sacrificial Hydrogen Evolution",
+                             "journal":  "Science Advances",
+                             "year":  2025,
+                             "month":  7,
+                             "day":  23,
+                             "type":  "journal-article",
+                             "doi":  "10.1126/sciadv.adx1629",
+                             "url":  "https://www.science.org/doi/10.1126/sciadv.adx1629",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  187801321,
+                             "title":  "CTAB-modified Moroccan illite for sustainable removal of anionic and cationic dyes from simulated dye solutions: integrating experimental optimization and computational analysis",
+                             "journal":  "Environmental Science and Pollution Research",
+                             "year":  2025,
+                             "month":  7,
+                             "day":  9,
+                             "type":  "journal-article",
+                             "doi":  "10.1007/s11356-025-36679-8",
+                             "url":  "https://doi.org/10.1007/s11356-025-36679-8",
+                             "topics":  [
+                                            "DFT \u0026 Computational"
+                                        ]
+                         },
+                         {
+                             "id":  179654990,
+                             "title":  "Ferrites/carbon allotropes nanocomposites for photocatalytic applications: A review",
+                             "journal":  "Coordination Chemistry Reviews",
+                             "year":  2025,
+                             "month":  7,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.ccr.2025.216537",
+                             "url":  "https://doi.org/10.1016/j.ccr.2025.216537",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  187225006,
+                             "title":  "Defect-engineered BiOI competitive to BiOI composites for photoelectrochemical sensing and photocatalytic removal of various water pollutants",
+                             "journal":  "Materials Today Chemistry",
+                             "year":  2025,
+                             "month":  7,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.mtchem.2025.102842",
+                             "url":  "https://doi.org/10.1016/j.mtchem.2025.102842",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  181719848,
+                             "title":  "Optimization and Scalability of Polymer‐Modified PSCs Investigated by Machine Learning",
+                             "journal":  "Applied Research",
+                             "year":  2025,
+                             "month":  4,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1002/appl.70009",
+                             "url":  "https://doi.org/10.1002/appl.70009",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  182605542,
+                             "title":  "Novel PVDF mixed matrix membranes incorporated with green synthesized magnesium oxide nanoparticles for enhanced dye removal: Optimization using RSM, SOLVER, and ANN approach",
+                             "journal":  "Environmental Research",
+                             "year":  2025,
+                             "month":  4,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.envres.2025.121619",
+                             "url":  "https://doi.org/10.1016/j.envres.2025.121619",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI"
+                                        ]
+                         },
+                         {
+                             "id":  173432851,
+                             "title":  "Ultra-fast prediction of D-π-A organic dye absorption maximum with advanced ensemble deep learning models",
+                             "journal":  "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
+                             "year":  2025,
+                             "month":  3,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.saa.2024.125536",
+                             "url":  "https://doi.org/10.1016/j.saa.2024.125536",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI"
+                                        ]
+                         },
+                         {
+                             "id":  180535250,
+                             "title":  "Chemical Modulation of α-FAPbI3 Perovskite Solar Cells: The Dual Substitution Role of CsSCN for Enhanced Stability and Efficiency",
+                             "journal":  "Materials Today Energy",
+                             "year":  2025,
+                             "month":  3,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.mtener.2025.101865",
+                             "url":  "https://doi.org/10.1016/j.mtener.2025.101865",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  174220901,
+                             "title":  "Optimally Miscible Polymer Bulk-Heterojunction-Particles for Nonsurfactant Photocatalytic Hydrogen Evolution",
+                             "journal":  "Journal of the American Chemical Society",
+                             "year":  2025,
+                             "month":  1,
+                             "day":  22,
+                             "type":  "journal-article",
+                             "doi":  "10.1021/jacs.4c13856",
+                             "url":  "https://doi.org/10.1021/jacs.4c13856",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  175584784,
+                             "title":  "Experimental, theoretical and mechanistic exploration of Ni role as non-plasmonic dopant in Ag-Ni plasmonic alloy and its co-catalytic boost to semiconductor photocatalysis",
+                             "journal":  "Journal of Alloys and Compounds",
+                             "year":  2025,
+                             "month":  1,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jallcom.2025.178606",
+                             "url":  "https://doi.org/10.1016/j.jallcom.2025.178606",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  167932343,
+                             "title":  "Comprehensive study on mechanical and ignition properties of newly synthesized lanthanide complexes for flame retardant paint additives",
+                             "journal":  "Journal of Coatings Technology and Research",
+                             "year":  2025,
+                             "month":  1,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1007/s11998-024-00986-5",
+                             "url":  "https://doi.org/10.1007/s11998-024-00986-5",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  171123336,
+                             "title":  "Design and predict the potential of imidazole-based organic dyes in dye-sensitized solar cells using fingerprint machine learning and supported by a web application",
+                             "journal":  "Scientific Reports",
+                             "year":  2024,
+                             "month":  11,
+                             "day":  3,
+                             "type":  "journal-article",
+                             "doi":  "10.1038/s41598-024-76739-6",
+                             "url":  "https://doi.org/10.1038/s41598-024-76739-6",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "Machine Learning \u0026 AI"
+                                        ]
+                         },
+                         {
+                             "id":  166951588,
+                             "title":  "Molecular Design Strategy for Meta‐Substituted Aromatic Organic Halides in Zero‐Lead‐Release Halide Perovskites with Efficient Waterproof Light Emission",
+                             "journal":  "Advanced Functional Materials",
+                             "year":  2024,
+                             "month":  9,
+                             "day":  5,
+                             "type":  "journal-article",
+                             "doi":  "10.1002/adfm.202408323",
+                             "url":  "https://doi.org/10.1002/adfm.202408323",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  166024503,
+                             "title":  "Biogenic synthesis of MgO nanoparticles using Arbutus Unedo leaf extract for removal of Bemacid Red from wastewater: Optimizing using BBD-RSM and ANN approach",
+                             "journal":  "Journal of Water Process Engineering",
+                             "year":  2024,
+                             "month":  9,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jwpe.2024.106008",
+                             "url":  "https://doi.org/10.1016/j.jwpe.2024.106008",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  166024627,
+                             "title":  "Solar-driven photocatalytic hydrogen production thiophene-quinoxaline-based polymer dots with tunable molecular weight",
+                             "journal":  "Polymer Journal",
+                             "year":  2024,
+                             "month":  8,
+                             "day":  8,
+                             "type":  "journal-article",
+                             "doi":  "10.1038/s41428-024-00945-2",
+                             "url":  "https://doi.org/10.1038/s41428-024-00945-2",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  164528730,
+                             "title":  "Self-condensation for enhancing the hydrophilicity of covalent organic polymers and photocatalytic hydrogen generation with unprecedented apparent quantum yield up to 500 nm",
+                             "journal":  "Chemical Engineering Journal",
+                             "year":  2024,
+                             "month":  7,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.cej.2024.154280",
+                             "url":  "https://doi.org/10.1016/j.cej.2024.154280",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  161396120,
+                             "title":  "Enhancing Self-Healing and Mechanical Robustness through Aluminum Acetylacetonate-Driven Metal–Ligand Coordination for Skin-Inspired Sensing",
+                             "journal":  "ACS Applied Polymer Materials",
+                             "year":  2024,
+                             "month":  6,
+                             "day":  28,
+                             "type":  "journal-article",
+                             "doi":  "10.1021/acsapm.4c00545",
+                             "url":  "https://doi.org/10.1021/acsapm.4c00545",
+                             "topics":  [
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  173031006,
+                             "title":  "Symmetry‐breaking of Dibenzo[b,d]thiophene Sulfone Enhancing Polaron Generation for Boosted Photocatalytic Hydrogen Evolution",
+                             "journal":  "Angewandte Chemie International Edition",
+                             "year":  2024,
+                             "month":  6,
+                             "day":  26,
+                             "type":  "journal-article",
+                             "doi":  "10.1002/anie.202407702",
+                             "url":  "https://doi.org/10.1002/anie.202407702",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  160638142,
+                             "title":  "Symmetry‐breaking of Dibenzo[b,d]thiophene Sulfone Enhancing Polaron Generation for Boosted Photocatalytic Hydrogen Evolution",
+                             "journal":  "Angewandte Chemie",
+                             "year":  2024,
+                             "month":  5,
+                             "day":  16,
+                             "type":  "journal-article",
+                             "doi":  "10.1002/ange.202407702",
+                             "url":  "http://dx.doi.org/10.1002/ange.202407702",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  160594547,
+                             "title":  "Synthesis, characterization, and coating application of a highly conductive polyaniline-TiO2 nanocomposite",
+                             "journal":  "Egyptian Journal of Petroleum",
+                             "year":  2024,
+                             "month":  4,
+                             "day":  25,
+                             "type":  "journal-article",
+                             "doi":  "10.62593/2090-2468.1001",
+                             "url":  "https://doi.org/10.62593/2090-2468.1001",
+                             "topics":  [
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  156734347,
+                             "title":  "Facile and Novel Synthetic Approach, Molecular docking, Molecular dynamics, and Drug‐Likeness Evaluation of 9‐substituted Acridine Congeners as Dual Anticancer and Antimicrobial Agents",
+                             "journal":  "Chemistry \u0026amp; Biodiversity",
+                             "year":  2024,
+                             "month":  3,
+                             "day":  13,
+                             "type":  "journal-article",
+                             "doi":  "10.1002/cbdv.202301986",
+                             "url":  "https://doi.org/10.1002/cbdv.202301986",
+                             "topics":  [
+                                            "DFT \u0026 Computational"
+                                        ]
+                         },
+                         {
+                             "id":  156734372,
+                             "title":  "Push-Pull-Pull Interactions of 2D Imide-Imine based Covalent Organic Framework to Promote Charge Separation in Photocatalytic Hydrogen Production",
+                             "journal":  "Journal of Materials Chemistry A",
+                             "year":  2024,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1039/d4ta01108b",
+                             "url":  "https://doi.org/10.1039/d4ta01108b",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  133114998,
+                             "title":  "3D/1D Architecture Using a 1-Hexyl-3-methylimidazolium Lead Triiodide Interlayer for Robust and Highly Performing Perovskite Solar Cells",
+                             "journal":  "ACS Applied Electronic Materials",
+                             "year":  2023,
+                             "month":  4,
+                             "day":  25,
+                             "type":  "journal-article",
+                             "doi":  "10.1021/acsaelm.2c01783",
+                             "url":  "https://doi.org/10.1021/acsaelm.2c01783",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  130359080,
+                             "title":  "Passivation Engineering Using Ultra‐hydrophobic D‐π‐A Organic Dye with Machine Learning Insights for Efficient and Stable Perovskite Solar Cells",
+                             "journal":  "Solar RRL",
+                             "year":  2023,
+                             "month":  3,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1002/solr.202201016",
+                             "url":  "https://doi.org/10.1002/solr.202201016",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "Machine Learning \u0026 AI",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  131997674,
+                             "title":  "Optical Band Gap Tuning, DFT Understandings, and Photocatalysis Performance of ZnO Nanoparticle-Doped Fe Compounds",
+                             "journal":  "Materials",
+                             "year":  2023,
+                             "month":  3,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.3390/ma16072676",
+                             "url":  "https://doi.org/10.3390/ma16072676",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  127534108,
+                             "title":  "Detection and Selective Removal Strategy of Thorium Ions Using a Novel Fluorescent Ligand and Hybrid Mesoporous γ-Al2O3-like Nanoneedles",
+                             "journal":  "ACS Sustainable Chemistry \u0026 Engineering",
+                             "year":  2023,
+                             "month":  2,
+                             "day":  13,
+                             "type":  "journal-article",
+                             "doi":  "10.1021/acssuschemeng.2c05000",
+                             "url":  "https://doi.org/10.1021/acssuschemeng.2c05000",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  125207502,
+                             "title":  "Selective removal of thorium ions from aqueous solutions using a hybrid mesoporous adsorbent as benzenesulfonamide-derivative@ZrO2",
+                             "journal":  "Journal of Water Process Engineering",
+                             "year":  2023,
+                             "month":  2,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jwpe.2022.103436",
+                             "url":  "https://doi.org/10.1016/j.jwpe.2022.103436",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  127962284,
+                             "title":  "A novel parameter identification strategy based on COOT optimizer applied to a three-diode model of triple cation perovskite solar cells",
+                             "journal":  "Neural Computing and Applications",
+                             "year":  2023,
+                             "month":  1,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1007/s00521-023-08230-8",
+                             "url":  "https://doi.org/10.1007/s00521-023-08230-8",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  116935104,
+                             "title":  "Molecular dynamic simulations for interactions of oxytetracycline with copper(II)-exchanged NaY zeolite",
+                             "journal":  "Inorganic Chemistry Communications",
+                             "year":  2022,
+                             "month":  10,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.inoche.2022.109829",
+                             "url":  "http://dx.doi.org/10.1016/j.inoche.2022.109829",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  112248952,
+                             "title":  "Fabrication and characterization of functionalized lignin-based adsorbent prepared from black liquor in the paper industry for superior removal of toxic dye",
+                             "journal":  "Fuel",
+                             "year":  2022,
+                             "month":  9,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.fuel.2022.124288",
+                             "url":  "https://doi.org/10.1016/j.fuel.2022.124288",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  105548877,
+                             "title":  "Mesoporous hierarchical ZrO2@rice straw-derived SiO2 nanocomposite for rapid adsorption and sunlight-driven photocatalytic degradation of methylene blue",
+                             "journal":  "Journal of Photochemistry and Photobiology A: Chemistry",
+                             "year":  2022,
+                             "month":  4,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.jphotochem.2021.113758",
+                             "url":  "https://doi.org/10.1016/j.jphotochem.2021.113758",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  109448313,
+                             "title":  "Synthesis, Crystal Structure, and Broadband Emission of (CH3)3SSnCl3",
+                             "journal":  "Inorganic Chemistry",
+                             "year":  2022,
+                             "month":  3,
+                             "day":  21,
+                             "type":  "journal-article",
+                             "doi":  "10.1021/acs.inorgchem.2c00181",
+                             "url":  "https://doi.org/10.1021/acs.inorgchem.2c00181",
+                             "topics":  [
+                                            "Materials Chemistry"
+                                        ]
+                         },
+                         {
+                             "id":  107955270,
+                             "title":  "The superior photocatalytic performance and DFT insights of S-scheme CuO@TiO2 heterojunction composites for simultaneous degradation of organics",
+                             "journal":  "Scientific Reports",
+                             "year":  2022,
+                             "month":  2,
+                             "day":  9,
+                             "type":  "journal-article",
+                             "doi":  "10.1038/s41598-022-05981-7",
+                             "url":  "https://doi.org/10.1038/s41598-022-05981-7",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  105417066,
+                             "title":  "Photocatalytic degradation of rhodamine B in the visible region using nanostructured CoAl2−xLaxO4 (x = 0, 0.01, 0.03, 0.07, and 0.09) series: Photocatalytic activity and DFT calculations",
+                             "journal":  "Inorganic Chemistry Communications",
+                             "year":  2022,
+                             "month":  2,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.inoche.2021.109176",
+                             "url":  "https://doi.org/10.1016/j.inoche.2021.109176",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  107467955,
+                             "title":  "Mesoporous spongy Ni–Co oxides@wheat straw-derived SiO2 for adsorption and photocatalytic degradation of methylene blue pollutants",
+                             "journal":  "Applied Nanoscience",
+                             "year":  2022,
+                             "month":  1,
+                             "day":  29,
+                             "type":  "journal-article",
+                             "doi":  "10.1007/s13204-021-02318-0",
+                             "url":  "http://dx.doi.org/10.1007/s13204-021-02318-0",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  125209113,
+                             "title":  "New thiadiazole modified chitosan derivative to control the growth of human pathogenic microbes and cancer cell lines",
+                             "journal":  "Scientific Reports",
+                             "year":  2022,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1038/s41598-022-25772-4",
+                             "url":  "https://doi.org/10.1038/s41598-022-25772-4",
+                             "topics":  [
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  125610721,
+                             "title":  "Facile and highly precise pH-value estimation using common pH paper based on machine learning techniques and supported mobile devices",
+                             "journal":  "Scientific Reports",
+                             "year":  2022,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1038/s41598-022-27054-5",
+                             "url":  "https://doi.org/10.1038/s41598-022-27054-5",
+                             "topics":  [
+                                            "Machine Learning \u0026 AI",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  79850925,
+                             "title":  "Photophysical, DFT and molecular docking studies of Sm(III) and Eu(III) complexes of newly synthesized coumarin ligand",
+                             "journal":  "Inorganic Chemistry Communications",
+                             "year":  2020,
+                             "month":  11,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.inoche.2020.108213",
+                             "url":  "https://doi.org/10.1016/j.inoche.2020.108213",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  68853170,
+                             "title":  "Stability Improvement and Performance Reproducibility Enhancement of Perovskite Solar Cells Following (FA/MA/Cs) PbI3-xBrx/(CH3)3SPbI3 Dimensionality Engineering",
+                             "journal":  "ACS Applied Energy Materials",
+                             "year":  2020,
+                             "month":  2,
+                             "day":  5,
+                             "type":  "journal-article",
+                             "doi":  "10.1021/acsaem.9b02117",
+                             "url":  "https://doi.org/10.1021/acsaem.9b02117",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  64383378,
+                             "title":  "Synthesis, characterization of ((CH3)3S)2SnI6-nCln and ((CH3)3S)2SnI6-nBrn (n=1, 2) perovskites and use in dye-sensitized solar cells",
+                             "journal":  "Materials Chemistry and Physics",
+                             "year":  2020,
+                             "month":  1,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.matchemphys.2019.122310",
+                             "url":  "https://doi.org/10.1016/j.matchemphys.2019.122310",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  76943868,
+                             "title":  "Boosting perovskite nanomorphology and charge transport properties via a functional D–π-A organic layer at the absorber/hole transporter interface",
+                             "journal":  "Nanoscale",
+                             "year":  2020,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1039/D0NR02562C",
+                             "url":  "https://doi.org/10.1039/D0NR02562C",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  64383372,
+                             "title":  "Synthesis and Characterization of Lead-Free (CH3)3SSnI3 1-D Perovskite",
+                             "journal":  "Journal of Electronic Materials",
+                             "year":  2019,
+                             "month":  9,
+                             "day":  3,
+                             "type":  "journal-article",
+                             "doi":  "10.1007/s11664-019-07591-y",
+                             "url":  "https://doi.org/10.1007/s11664-019-07591-y",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  64383371,
+                             "title":  "Synthesis of novel semi-squaraine derivatives and application in efficient dye-sensitized solar cells",
+                             "journal":  "Dyes and Pigments",
+                             "year":  2019,
+                             "month":  6,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.dyepig.2019.02.028",
+                             "url":  "https://doi.org/10.1016/j.dyepig.2019.02.028",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  64383375,
+                             "title":  "Facile synthesis of sulfide-based chalcogenide as hole-transporting materials for cost-effective efficient perovskite solar cells",
+                             "journal":  "Journal of Materials Science: Materials in Electronics",
+                             "year":  2019,
+                             "month":  2,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1007/s10854-019-01001-z",
+                             "url":  "https://doi.org/10.1007/s10854-019-01001-z",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  44780222,
+                             "title":  "Synthesis, characterization and use of highly stable trimethyl sulfonium tin(IV) halide defect perovskites in dye sensitized solar cells",
+                             "journal":  "Polyhedron",
+                             "year":  2018,
+                             "month":  5,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.poly.2018.05.001",
+                             "url":  "https://doi.org/10.1016/j.poly.2018.05.001",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  41749961,
+                             "title":  "Synthesis, characterization and optoelectronic properties of chemically stable (CH 3 ) 3 SPbI 3− x Br x  and (CH 3 ) 3 SPbI 3− x Cl x  ( x  = 0, 1, 2, 3) perovskites",
+                             "journal":  "Polyhedron",
+                             "year":  2018,
+                             "month":  2,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.poly.2017.11.030",
+                             "url":  "https://doi.org/10.1016/j.poly.2017.11.030",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites"
+                                        ]
+                         },
+                         {
+                             "id":  32887535,
+                             "title":  "Highly sensitive spectrofluorimetric analysis and Molecular Docking using benzocoumarin hydrazide derivative doped in sol-gel matrix as optical sensor",
+                             "journal":  "Sensors and Actuators B: Chemical",
+                             "year":  2016,
+                             "month":  9,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.1016/j.snb.2016.04.024",
+                             "url":  "https://doi.org/10.1016/j.snb.2016.04.024",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  64383388,
+                             "title":  "SYNTHESIS, CHARACTERIZATION AND PHOTOLUMINESCENCEPROPERTIES OF NEW COUMARIN HYDRAZIDE AND ITS LANTHANIDE (III) COMPLEXES",
+                             "journal":  "Al-Azhar Bulletin of Science",
+                             "year":  2014,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "journal-article",
+                             "doi":  "10.21608/absb.2014.23794",
+                             "url":  "https://doi.org/10.21608/absb.2014.23794",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  106147318,
+                             "title":  "Mesoporous Spongy Ni-Co-Oxides@Wheat Straw-Derived SiO2 For Adsorption And Photocatalytic Degradation of Methylene Blue Pollutants",
+                             "journal":  "",
+                             "year":  0,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "other",
+                             "doi":  "10.21203/rs.3.rs-780301/v1",
+                             "url":  "https://doi.org/10.21203/rs.3.rs-780301/v1",
+                             "topics":  [
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         },
+                         {
+                             "id":  173031041,
+                             "title":  "Enhancing the Hydrophilicity of Covalent Organic Polymers by Self-Condensation for Photocatalytic Hydrogen Generation with Unprecedented Apparent Quantum Yield Up to 500 Nm",
+                             "journal":  "",
+                             "year":  0,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "other",
+                             "doi":  "10.2139/ssrn.4781817",
+                             "url":  "https://doi.org/10.2139/ssrn.4781817",
+                             "topics":  [
+                                            "DFT \u0026 Computational",
+                                            "Photocatalysis \u0026 Sensors",
+                                            "Polymers \u0026 Circular Economy"
+                                        ]
+                         },
+                         {
+                             "id":  106147335,
+                             "title":  "Development of inorganic and hybrid perovskite materials and their application in photovoltaic devices",
+                             "journal":  "",
+                             "year":  0,
+                             "month":  0,
+                             "day":  0,
+                             "type":  "dissertation-thesis",
+                             "doi":  "10.12681/eadd/48825",
+                             "url":  "https://doi.org/10.12681/eadd/48825",
+                             "topics":  [
+                                            "Solar Energy \u0026 Perovskites",
+                                            "Photocatalysis \u0026 Sensors"
+                                        ]
+                         }
+                     ]
+}

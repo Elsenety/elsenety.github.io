@@ -1,0 +1,31 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aisiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2EB8D7"/>
+      <stop offset="100%" stop-color="#114669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagonal molecular frame -->
+  <polygon points="32,4 56,18 56,46 32,60 8,46 8,18"
+           fill="none" stroke="url(#aisiGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Inner orbit ring -->
+  <ellipse cx="32" cy="32" rx="17" ry="9" fill="none" stroke="#2EB8D7" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- Core node -->
+  <circle cx="32" cy="32" r="8" fill="url(#aisiGrad)"/>
+  <circle cx="32" cy="32" r="8" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Satellite atoms at hex vertices -->
+  <circle cx="32" cy="4" r="3" fill="#2EB8D7"/>
+  <circle cx="56" cy="18" r="3" fill="#2EB8D7"/>
+  <circle cx="56" cy="46" r="3" fill="#114669"/>
+  <circle cx="32" cy="60" r="3" fill="#114669"/>
+  <circle cx="8" cy="46" r="3" fill="#114669"/>
+  <circle cx="8" cy="18" r="3" fill="#2EB8D7"/>
+
+  <!-- Connecting bonds from core to two nearest vertices -->
+  <line x1="32" y1="24" x2="32" y2="7" stroke="#2EB8D7" stroke-width="1.4" opacity="0.6"/>
+  <line x1="39" y1="27" x2="53" y2="19" stroke="#2EB8D7" stroke-width="1.4" opacity="0.6"/>
+</svg>
