@@ -3,135 +3,176 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV | Dr. Mohamed Elsenety</title>
-  <meta name="description" content="Academic CV of Dr. Mohamed Elsenety: appointments, education, publications, grants, and teaching activities.">
+  <title>Privacy Policy | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Privacy policy and data handling guidelines for the academic website of Dr. Mohamed Elsenety.">
+
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.png">
-    
-        <style>
-      .pub-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 100%;
-      }
-      .pub-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-      }
-      .pub-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-      }
-      .modal-image {
-        width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-      }
-      .pub-badge {
-        font-size: 0.8rem;
-      }
-      .social-links a {
-        text-decoration: none;
-        transition: opacity 0.2s;
-      }
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-      .google-scholar-icon {
-        color: #4285F4;
-      }
-      .orcid-icon {
-        color: #A6CE39;
-      }
-      .ppus-icon {
-        color: #E9710E;
-      }
-      .researchgate-icon {
-        color: #00CCBB;
-      }
-    </style>
-    
-    
 </head>
-<body data-page="cv">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+<body data-page="privacy">
+
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsExample">
+    <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="ml.html">ML Apps</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-cv" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-gallery" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-apps" href="ml.html">ML Apps</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
       </ul>
-      <div class="d-flex gap-2">
-        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/Mohamed_Elsenety_CV.pdf" download>Download CV</a>-->
-        <button class="btn btn-outline-secondary btn-sm" id="themeToggle">🌓</button>
+      <div class="d-flex gap-2 align-items-center">
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle light / dark">🌓</button>
       </div>
     </div>
   </div>
 </nav>
 
-  <!-- Privacy Policy -->
-  <section class="container my-5">
-    <h2 class="section-title">Privacy Policy</h2>
-    <p>Thank you for visiting the Elsenety website (https://elsenety.github.io/). This policy explains how we handle personal information collected on this site. By using this website, you agree to the practices described in this privacy policy.</p>
-    <p>This policy may change at any time, and updates will be posted here. We encourage you to review it whenever you visit the site.</p>
+<!-- ================================================
+     SUBPAGE HERO
+     ================================================ -->
+<header class="subpage-hero">
+  <div class="container position-relative" style="z-index: 1;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+      </ol>
+    </nav>
 
-    <h5>Cookies</h5>
-    <p>Our website may use cookies to collect information about visitors. Some cookies may come from third-party services or analytics tools. Most browsers allow you to disable cookies. Please check your browser settings if you wish to do so.</p>
-
-    <h5>Information Collection</h5>
-    <p>We may collect certain non-personal information, such as your IP address, browser type, and usage patterns. This information is mainly used to analyze website traffic, improve user experience, and understand how visitors interact with the site.</p>
-
-    <h5>Distribution of Information</h5>
-    <p>We do not sell your personal information. We may share information only when required by law, to prevent fraud or security issues, or with trusted third-party services that help us operate the website.</p>
-
-    <h5>Third-Party Links</h5>
-    <p>Our website may contain links to external sites. We are not responsible for the privacy practices of those sites. Please review their policies when you visit them.</p>
-
-    <h5>Privacy Contact Information</h5>
-    <p>If you have any questions or concerns about this privacy policy, please contact us at:  
-      📧 <a href="mailto:m.elsenety.sci@gmail.com">m.elsenety.sci@gmail.com</a>
-    </p>
-  </section>
-
-    <footer class="mt-5 border-top">
-      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
-        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
-        <span class="social-links">
-          <a href="" class="me-3" target="_blank" title="Google Scholar">
-            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
-          </a>
-          <a href="" class="me-3" target="_blank" title="ORCID">
-            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
-          </a>
-          <a href="" class="me-3" target="_blank" title="Scopus">
-            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
-          </a>
-          <a href="" target="_blank" title="ResearchGate">
-            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
-          </a>
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="badge px-3 py-2 rounded-pill bg-primary bg-opacity-25 text-white border border-primary border-opacity-50 mb-3">
+          <i class="bi bi-shield-check me-1"></i> Data Protection &amp; Academic Transparency
         </span>
+        <h1 class="mb-3">Privacy Policy</h1>
+        <p class="lead">
+          Guidelines governing personal information handling, cookies, and privacy ethics across this academic portfolio and associated computational tools.
+        </p>
       </div>
-    </footer>
+    </div>
+  </div>
+</header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-  
+<!-- ================================================
+     MAIN CONTENT
+     ================================================ -->
+<main class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <div class="p-4 p-md-5 rounded-4 bg-body border shadow-sm">
+        
+        <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
+          <span class="badge text-bg-light border"><i class="bi bi-calendar-event me-1"></i> Last Updated: October 2026</span>
+          <span class="small text-muted">URL: https://elsenety.github.io/</span>
+        </div>
+
+        <h4 class="fw-bold mb-3">1. Academic Scope &amp; Purpose</h4>
+        <p class="text-secondary mb-4">
+          This personal academic website is operated by <strong>Dr. Mohamed Elsenety</strong> to present research activities, peer-reviewed publications, open-access machine learning web tools, and academic credentials. We are committed to protecting the privacy of visitors, students, and academic collaborators.
+        </p>
+
+        <h4 class="fw-bold mb-3">2. Information Collection</h4>
+        <p class="text-secondary mb-2">
+          We collect minimal information necessary to deliver and improve our site:
+        </p>
+        <ul class="text-secondary mb-4">
+          <li><strong>Direct Inquiries:</strong> When you submit a message via the Contact page form, your provided name, institutional affiliation, email address, and message content are securely transmitted to facilitate academic correspondence.</li>
+          <li><strong>Aggregated Web Metrics:</strong> Non-personally identifiable technical parameters (e.g., browser type, approximate geographic region, page view frequency) may be processed to assess traffic to published scientific tools.</li>
+        </ul>
+
+        <h4 class="fw-bold mb-3">3. Local Storage &amp; Cookies</h4>
+        <p class="text-secondary mb-4">
+          This website does not employ commercial advertising cookies or cross-site tracking scripts. Browser <code>localStorage</code> is used exclusively for functional user interface preferences, such as retaining your preferred visual display mode (Light or Dark theme).
+        </p>
+
+        <h4 class="fw-bold mb-3">4. External Services &amp; Scientific Repositories</h4>
+        <p class="text-secondary mb-4">
+          This site links to trusted external scientific platforms, including <strong>Google Scholar</strong>, <strong>ORCID</strong>, <strong>Scopus</strong>, <strong>Nature Publishing Group</strong>, <strong>ScienceDirect</strong>, <strong>Google Play Store</strong>, and <strong>Streamlit Cloud</strong>. When following external hyperlinks, visitors are subject to the respective privacy terms of those services.
+        </p>
+
+        <h4 class="fw-bold mb-3">5. Data Confidentiality</h4>
+        <p class="text-secondary mb-4">
+          We do not sell, rent, or monetize personal contact information. Information shared with us is used strictly for academic collaboration, peer review, or answering direct inquiries.
+        </p>
+
+        <h4 class="fw-bold mb-3">6. Inquiries &amp; Contact</h4>
+        <p class="text-secondary mb-0">
+          For any questions concerning this privacy policy, please contact:
+          <br>
+          <strong>Dr. Mohamed Elsenety</strong>
+          <br>
+          Institute of Nanoscience and Nanotechnology, NCSR “Demokritos”, Athens, Greece
+          <br>
+          Email: <a href="mailto:m.elsenety@azhar.edu.eg" class="text-decoration-none">m.elsenety@azhar.edu.eg</a> &nbsp;|&nbsp; <a href="mailto:m.elsenety@outlook.com" class="text-decoration-none">m.elsenety@outlook.com</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-4">
+        <div class="footer-brand">Dr. Mohamed Elsenety</div>
+        <div class="footer-tagline">Materials Science · DFT · Machine Learning</div>
+        <div class="footer-tagline mt-1">
+          <i class="bi bi-building me-1"></i> NCSR "Demokritos", Athens &amp; Al-Azhar University, Cairo
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Navigation</h6>
+        <ul class="list-unstyled mb-0" style="font-size:.875rem;">
+          <li class="mb-1"><a href="index.html" style="color:var(--text-secondary);text-decoration:none;">Home</a></li>
+          <li class="mb-1"><a href="cv.html" style="color:var(--text-secondary);text-decoration:none;">Curriculum Vitae</a></li>
+          <li class="mb-1"><a href="publications.html" style="color:var(--text-secondary);text-decoration:none;">Publications</a></li>
+          <li class="mb-1"><a href="gallery.html" style="color:var(--text-secondary);text-decoration:none;">Gallery</a></li>
+          <li class="mb-1"><a href="ml.html" style="color:var(--text-secondary);text-decoration:none;">ML Applications</a></li>
+          <li class="mb-1"><a href="contact.html" style="color:var(--text-secondary);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Connect</h6>
+        <div class="footer-social d-flex gap-2 flex-wrap">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" title="Google Scholar"><i class="bi bi-google"></i></a>
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" title="ORCID"><i class="bi bi-person-circle"></i></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" title="Scopus"><i class="bi bi-journal"></i></a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+          <a href="contact.html" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © <span id="year"></span> Dr. Mohamed Mahmoud Elsenety — All rights reserved. &nbsp;·&nbsp;
+      <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
 </body>

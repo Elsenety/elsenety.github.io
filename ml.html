@@ -1,272 +1,545 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ML Apps | Dr. Mohamed Elsenety</title>
-    <meta name="description" content="Academic profile of Your Name: CV, publications, gallery, and ML apps.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Learning Applications | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Explore open-access machine learning, deep neural network, and computer vision applications developed by Dr. Mohamed Elsenety for chemical property prediction, solar cells, and pH sensors.">
+  <meta name="keywords" content="Machine learning chemistry, materials informatics, Streamlit apps, DSSC PCE prediction, smart pH, SMILES deep learning, Mohamed Elsenety">
 
-    <link rel="icon" href="assets/img/favicon.png">
-            <style>
-      .pub-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 100%;
-      }
-      .pub-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-      }
-      .pub-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-      }
-      .modal-image {
-        width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-      }
-      .pub-badge {
-        font-size: 0.8rem;
-      }
-      .social-links a {
-        text-decoration: none;
-        transition: opacity 0.2s;
-      }
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-      .google-scholar-icon {
-        color: #4285F4;
-      }
-      .orcid-icon {
-        color: #A6CE39;
-      }
-      .scopus-icon {
-        color: #E9710E;
-      }
-      .researchgate-icon {
-        color: #00CCBB;
-      }
-    </style>
-  </head>
-  <body data-page="apps">
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <style>
+    .filter-btn {
+      border-radius: var(--radius-pill);
+      padding: 0.45rem 1.25rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--surface-border);
+      background: var(--surface-card);
+      color: var(--text-secondary);
+      transition: all var(--t-fast);
+      cursor: pointer;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--grad-accent);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 14px rgba(14,165,233,0.3);
+    }
+    .pipeline-step {
+      background: var(--surface-card);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      position: relative;
+      height: 100%;
+      transition: transform var(--t-base);
+    }
+    .pipeline-step:hover {
+      transform: translateY(-4px);
+    }
+    .step-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--grad-accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body data-page="apps">
+
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample" aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample">
+    <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-cv" href="cv.html">CV</a></li>
-        <!--<li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>-->
+        <li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-gallery" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" id="nav-apps" href="ml.html">ML Apps</a></li>
+        <li class="nav-item"><a class="nav-link active" id="nav-apps" href="ml.html">ML Apps</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
-      
       </ul>
       <div class="d-flex gap-2 align-items-center">
-        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/YourName_CV.pdf" download>Download CV</a>-->
-        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle light / dark">🌓</button>
       </div>
     </div>
   </div>
 </nav>
-<section class="container my-5">
-  <div class="d-flex align-items-center justify-content-between mb-3">
-    <h1 class="mb-0">Machine Learning Apps</h1>
-    <!--<a href="https://github.com" target="_blank" class="btn btn-outline-secondary btn-sm">View on GitHub</a>-->
-  </div>
 
-<h2 class="section-title">
-  <i class="fas fa-tools" style="margin-right: 8px;"></i> Under Development Apps
-</h2>
-  
-  
-  
-  
-  
-  <div class="row g-4">
-    <div class="col-md-6">
-      <div class="card h-100" id="smartph">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between align-items-center">
-            Smart_pH <span class="badge text-bg-secondary">Active</span>
-          </h5>
-          <p class="card-text">Universal pH estimation via ANN from images of different six type of pH ( 1, bock; 2 block, and 4-block indicator) strips. </p>
-          <ul class="small text-muted">
-            <li>Inputs: Camera/Upload → crop → color stats (mean/median/mode)</li>
-            <li>Model: deep learrining ANN</li>
-            <li>Output: Predicted pH value</li>
-            <!--<li>Scintific Paper DOI:  "Under Submission" </li>-->
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="#" class="btn btn-primary disabled">III</a>
-            <a href="smartpH.html" class="btn btn-outline-primary">Project Page</a>
-            <!--<a href="#" class="btn btn-outline-secondary">Scintific paper</a>-->
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- ================================================
+     SUBPAGE HERO
+     ================================================ -->
+<header class="subpage-hero">
+  <div class="container position-relative" style="z-index: 1;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Machine Learning Applications</li>
+      </ol>
+    </nav>
 
-  <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between align-items-center">
-            TPA-Based Dyes in DSSCs <span class="badge text-bg-secondary">Inactive</span>
-          </h5>
-          <p class="card-text">Design and Predict the Potential of Triphenyle amine-Based Organic Dyes in Dye-Sensitized Solar Cells Using  ANN Learning</p>
-          <ul class="small text-muted">
-            <li>Inputs: SMILE Structure</li>
-            <li>Model:  ANN Learning </li>
-            <li>Output: Power conversion efficiency (PCE%)</li>
-            <li>Scintific Paper : under submition </li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="" class="btn btn-primary disabled">|||</a>
-            <a href="tpa-dssc.html"  class="btn btn-outline-primary">Model Info</a>
-                    <!--<a href="tpa-dssc.html" class="btn btn-outline-secondary btn-sm disabled">Model Info</a>-->
-            <a href="https://tpa-dssc.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">Launch App | Demo</a>
-<!--             <a href="" target="_blank" class="btn btn-outline-secondary">Scintific Paper</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-    <h2 class="section-title">
-  <i class="fas fa-check-circle" style="margin-right: 8px;"></i> Completed Apps
-</h2>
-    
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between align-items-center">
-            Dye Max.Abs./TiO2<span class="badge text-bg-primary">Active</span>
-          </h5>
-          <p class="card-text">High-Throughput Deep Learning Prediction of D-π-A Dye Absorption Maxima on Titania Surfaces</p>
-          <ul class="small text-muted">
-            <li>Inputs: SMILE Structure</li>
-            <li>Model: deep learrining ANN</li>
-            <li>Output: Absorption Maxima on Titania Surface </li>
-            <li>Scintific Paper DOI: 10.1002/slct.202501556 </li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="" class="btn btn-primary disabled">|||</a>
-            <a href="https://max-abs.streamlit.app/" target="_blank" class="btn btn-outline-primary">Launch App</a>
-            <a href="https://doi.org/10.1002/slct.202501556" target="_blank" class="btn btn-outline-secondary">Scintific paper</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between align-items-center">
-            Dye Max.Abs./ Solvents <span class="badge text-bg-primary">Active</span>
-          </h5>
-          <p class="card-text">Ultra-fast prediction of D-π-A organic dye absorption maximum with advanced ensemble deep learning models.</p>
-          <ul class="small text-muted">
-            <li>Inputs: SMILE Structure</li>
-            <li>Model: deep learrining ANN</li>
-            <li>Output: Absorption Maxima on solvents </li>
-            <li>Scintific Paper DOI: 10.1016/j.saa.2024.125536 </li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="" class="btn btn-primary disabled">|||</a>
-            <a href="https://abs-max.streamlit.app/" target="_blank" class="btn btn-outline-primary">Launch App</a>
-            <a href="https://www.sciencedirect.com/science/article/pii/S1386142524017025" target="_blank" class="btn btn-outline-secondary">Scintific Paper</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between align-items-center">
-            Imidazole-Based Dyes in DSSCs <span class="badge text-bg-primary">Active</span>
-          </h5>
-          <p class="card-text">Design and Predict the Potential of Imidazole-Based Organic Dyes in Dye-Sensitized Solar Cells Using Fingerprint Machine Learning</p>
-          <ul class="small text-muted">
-            <li>Inputs: SMILE Structure</li>
-            <li>Model: MLP Regressor</li>
-            <li>Output: Power conversion efficiency (PCE%)</li>
-            <li>Scintific Paper DOI: 10.1038/s41598-024-76739-6 </li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="" class="btn btn-primary disabled">|||</a>
-            <a href="https://dssc-elsenety.streamlit.app/" target="_blank" class="btn btn-outline-primary">Launch App</a>
-            <a href="https://www.nature.com/articles/s41598-024-76739-6" target="_blank" class="btn btn-outline-secondary">Scintific Paper</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
-    
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between align-items-center">
-            pH-value Estimator (limited) <span class="badge text-bg-primary">Active</span>
-          </h5>
-          <p class="card-text">Facile and highly precise pH-value estimation using common pH paper based on machine learning techniques and supported mobile devices</p>
-          <ul class="small text-muted">
-            <li>Inputs: Camera/Upload </li>
-            <li>Model: ML KNN</li>
-            <li>Output: Predicted pH value</li>
-            <li>Scintific Paper DOI: 10.1038/s41598-022-27054-5 </li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a href="" class="btn btn-primary disabled">|||</a>
-            <a href="https://elsenety-ph4-ph-app4-pazg10.streamlit.app/" target="_blank" class="btn btn-outline-primary">Launch App</a>
-            <a href="https://www.nature.com/articles/s41598-022-27054-5" target="_blank" class="btn btn-outline-secondary">Scintific Paper</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-    
-    
-    
-  </div>
-</section>
-    <footer class="mt-5 border-top">
-      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
-        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
-        <span class="social-links">
-          <a href="" class="me-3" target="_blank" title="Google Scholar">
-            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
-          </a>
-          <a href="" class="me-3" target="_blank" title="ORCID">
-            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
-          </a>
-          <a href="" class="me-3" target="_blank" title="Scopus">
-            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
-          </a>
-          <a href="" target="_blank" title="ResearchGate">
-            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
-          </a>
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="badge px-3 py-2 rounded-pill bg-primary bg-opacity-25 text-white border border-primary border-opacity-50 mb-3">
+          <i class="bi bi-cpu-fill me-1"></i> Materials Informatics &amp; Applied AI Suite
         </span>
+        <h1 class="mb-3">Machine Learning Apps</h1>
+        <p class="lead">
+          Open-access interactive web tools, mobile apps, and deep learning algorithms designed to accelerate discovery in photovoltaics, molecular spectroscopy, and environmental sensing.
+        </p>
       </div>
-    </footer>
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-inline-flex align-items-center gap-3 p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25 text-start">
+          <i class="bi bi-clouds-fill fs-2 text-info"></i>
+          <div>
+            <div class="fw-bold text-white">Streamlit &amp; Cloud Ready</div>
+            <div class="small text-white-50">Instant in-browser prediction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================================================
+     FILTER BAR
+     ================================================ -->
+<div class="sticky-top bg-body border-bottom py-3 shadow-sm" style="top: 72px; z-index: 990;">
+  <div class="container">
+    <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+      <div class="d-flex flex-wrap gap-2" id="appFilterGroup">
+        <button class="filter-btn active" data-filter="all">All Apps (6)</button>
+        <button class="filter-btn" data-filter="dssc">Solar &amp; Photovoltaics (2)</button>
+        <button class="filter-btn" data-filter="spectro">Spectroscopy &amp; Solvents (2)</button>
+        <button class="filter-btn" data-filter="sensors">Sensors &amp; Computer Vision (2)</button>
+      </div>
+      <div class="small text-muted d-none d-md-block">
+        <i class="bi bi-check-circle-fill text-success me-1"></i> Trained on validated experimental &amp; DFT datasets
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     MAIN CONTENT
+     ================================================ -->
+<main class="container my-5">
+
+  <!-- ML Applications Grid -->
+  <div class="row g-4" id="appsGrid">
+
+    <!-- APP 1: Smart_pH (Android & AI) -->
+    <div class="col-lg-6 app-card-wrapper" data-category="sensors">
+      <div class="app-card-v2">
+        <div class="app-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="app-icon-wrap" style="color:var(--clr-emerald);background:rgba(16,185,129,0.12);">
+              <i class="bi bi-phone-fill"></i>
+            </div>
+            <div>
+              <h3 class="mb-0">Smart_pH Universal Estimator</h3>
+              <div class="small text-muted">Android Mobile &amp; Computer Vision AI</div>
+            </div>
+          </div>
+          <span class="pulse-badge active">
+            <span class="dot"></span> Active App
+          </span>
+        </div>
+
+        <p class="desc">
+          Universal pH estimation via Deep Artificial Neural Networks directly from smartphone photos of 1-block, 2-block, and 4-block indicator strips under variable ambient illumination.
+        </p>
+
+        <ul class="spec-list">
+          <li><i class="bi bi-camera"></i> <strong>Inputs:</strong> Live Camera Capture or Upload &rarr; Auto color extraction</li>
+          <li><i class="bi bi-diagram-3"></i> <strong>Model:</strong> Deep Neural Network (ANN) trained on RGB color spaces</li>
+          <li><i class="bi bi-bullseye"></i> <strong>Output:</strong> Quantitative pH value with confidence index</li>
+        </ul>
+
+        <div class="tech-tags">
+          <span class="tech-tag">Deep ANN</span>
+          <span class="tech-tag">Android App</span>
+          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">Google Play</span>
+          <span class="tech-tag">RGB Stats</span>
+        </div>
+
+        <div class="app-actions">
+          <a href="smartpH.html" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-info-circle me-1"></i> Project Page
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=elsenety.yallascience.smartph" target="_blank" class="btn btn-primary btn-sm">
+            <i class="bi bi-google-play me-1"></i> Google Play Store
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- APP 2: Imidazole-Based Dyes in DSSCs (Nature Scientific Reports) -->
+    <div class="col-lg-6 app-card-wrapper" data-category="dssc">
+      <div class="app-card-v2">
+        <div class="app-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="app-icon-wrap" style="color:var(--clr-primary);background:rgba(14,165,233,0.12);">
+              <i class="bi bi-sun-fill"></i>
+            </div>
+            <div>
+              <h3 class="mb-0">Imidazole Dyes in DSSCs (PCE%)</h3>
+              <div class="small text-muted">Nature Sci Rep (2024) Publication</div>
+            </div>
+          </div>
+          <span class="pulse-badge active">
+            <span class="dot"></span> Published &amp; Live
+          </span>
+        </div>
+
+        <p class="desc">
+          High-accuracy prediction of solar cell Power Conversion Efficiency (PCE%) for imidazole-based organic sensitizers using molecular fingerprints and multilayer perceptron neural networks.
+        </p>
+
+        <ul class="spec-list">
+          <li><i class="bi bi-fingerprint"></i> <strong>Inputs:</strong> Chemical SMILES string or molecular sketch</li>
+          <li><i class="bi bi-cpu"></i> <strong>Algorithm:</strong> MLP Regressor (Deep Neural Net) + Daylight Fingerprints</li>
+          <li><i class="bi bi-journal-text"></i> <strong>Citation:</strong> <em>Sci Rep</em> 14, 25890 (2024) · DOI: 10.1038/s41598-024-76739-6</li>
+        </ul>
+
+        <div class="tech-tags">
+          <span class="tech-tag">MLP Regressor</span>
+          <span class="tech-tag">Streamlit</span>
+          <span class="tech-tag">SMILES</span>
+          <span class="tech-tag">Daylight Fingerprint</span>
+          <span class="tech-tag">Nature Sci Rep</span>
+        </div>
+
+        <div class="app-actions">
+          <a href="https://dssc-elsenety.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Launch App
+          </a>
+          <a href="ml_imidazole_dssc.html" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-card-text me-1"></i> Model Guide
+          </a>
+          <a href="https://doi.org/10.1038/s41598-024-76739-6" target="_blank" class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-journal-check me-1"></i> Read Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- APP 3: Dye Max.Abs on Titania (ChemistrySelect 2025) -->
+    <div class="col-lg-6 app-card-wrapper" data-category="spectro">
+      <div class="app-card-v2">
+        <div class="app-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="app-icon-wrap" style="color:var(--clr-accent);background:rgba(124,58,237,0.12);">
+              <i class="bi bi-layers-half"></i>
+            </div>
+            <div>
+              <h3 class="mb-0">Dye Max.Abs. on TiO2 Surfaces</h3>
+              <div class="small text-muted">ChemistrySelect (2025) Publication</div>
+            </div>
+          </div>
+          <span class="pulse-badge active">
+            <span class="dot"></span> Published &amp; Live
+          </span>
+        </div>
+
+        <p class="desc">
+          High-throughput deep learning prediction of D-&pi;-A organic dye absorption maxima (&lambda;max) when anchored to titanium dioxide surfaces, accelerating photocatalyst and solar cell design.
+        </p>
+
+        <ul class="spec-list">
+          <li><i class="bi bi-input-cursor-text"></i> <strong>Inputs:</strong> SMILES string notation of D-&pi;-A chromophore</li>
+          <li><i class="bi bi-diagram-3"></i> <strong>Model:</strong> Deep Learning Artificial Neural Network (ANN)</li>
+          <li><i class="bi bi-journal-text"></i> <strong>Citation:</strong> <em>ChemistrySelect</em> (2025) · DOI: 10.1002/slct.202501556</li>
+        </ul>
+
+        <div class="tech-tags">
+          <span class="tech-tag">Deep ANN</span>
+          <span class="tech-tag">Titania Interface</span>
+          <span class="tech-tag">Streamlit</span>
+          <span class="tech-tag">Absorption Maxima</span>
+          <span class="tech-tag">ChemistrySelect</span>
+        </div>
+
+        <div class="app-actions">
+          <a href="https://max-abs.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Launch App
+          </a>
+          <a href="https://doi.org/10.1002/slct.202501556" target="_blank" class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-journal-check me-1"></i> Read Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- APP 4: Dye Max.Abs in Solvents (SAA 2024) -->
+    <div class="col-lg-6 app-card-wrapper" data-category="spectro">
+      <div class="app-card-v2">
+        <div class="app-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="app-icon-wrap" style="color:var(--clr-teal);background:rgba(20,184,166,0.12);">
+              <i class="bi bi-droplet-half"></i>
+            </div>
+            <div>
+              <h3 class="mb-0">Dye Max.Abs. in Diverse Solvents</h3>
+              <div class="small text-muted">Spectrochimica Acta A (2024) Publication</div>
+            </div>
+          </div>
+          <span class="pulse-badge active">
+            <span class="dot"></span> Published &amp; Live
+          </span>
+        </div>
+
+        <p class="desc">
+          Ultra-fast solvatochromic prediction of D-&pi;-A organic dye absorption peaks across diverse liquid media using an advanced ensemble deep learning framework.
+        </p>
+
+        <ul class="spec-list">
+          <li><i class="bi bi-input-cursor-text"></i> <strong>Inputs:</strong> SMILES string &amp; solvent dielectric parameters</li>
+          <li><i class="bi bi-diagram-3"></i> <strong>Model:</strong> Ensemble Deep Learning Neural Architecture</li>
+          <li><i class="bi bi-journal-text"></i> <strong>Citation:</strong> <em>Spectrochimica Acta A</em> (2024) · DOI: 10.1016/j.saa.2024.125536</li>
+        </ul>
+
+        <div class="tech-tags">
+          <span class="tech-tag">Ensemble Deep Learning</span>
+          <span class="tech-tag">Solvatochromism</span>
+          <span class="tech-tag">Streamlit</span>
+          <span class="tech-tag">Elsevier SAA</span>
+        </div>
+
+        <div class="app-actions">
+          <a href="https://abs-max.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Launch App
+          </a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S1386142524017025" target="_blank" class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-journal-check me-1"></i> ScienceDirect Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- APP 5: TPA-Based Dyes in DSSCs -->
+    <div class="col-lg-6 app-card-wrapper" data-category="dssc">
+      <div class="app-card-v2">
+        <div class="app-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="app-icon-wrap" style="color:var(--clr-amber);background:rgba(245,158,11,0.12);">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <div>
+              <h3 class="mb-0">TPA-Based Dyes in DSSCs</h3>
+              <div class="small text-muted">Triphenylamine Sensitizers · PCE% Predictor</div>
+            </div>
+          </div>
+          <span class="pulse-badge active">
+            <span class="dot"></span> Live Demo
+          </span>
+        </div>
+
+        <p class="desc">
+          Predict photovoltaic performance parameters (PCE%, Voc, Jsc, FF) of Triphenylamine (TPA) organic dyes from SMILES representations using multi-target deep neural networks with R² &gt; 0.90.
+        </p>
+
+        <ul class="spec-list">
+          <li><i class="bi bi-file-earmark-code"></i> <strong>Inputs:</strong> SMILES string or batch molecular upload</li>
+          <li><i class="bi bi-graph-up"></i> <strong>Accuracy:</strong> R² = 0.90 (Jsc), 0.91 (Voc), 0.90 (FF)</li>
+          <li><i class="bi bi-clock-history"></i> <strong>Status:</strong> Manuscript under peer review · Demo live</li>
+        </ul>
+
+        <div class="tech-tags">
+          <span class="tech-tag">TPA Dyes</span>
+          <span class="tech-tag">Multi-Output ANN</span>
+          <span class="tech-tag">Streamlit</span>
+          <span class="tech-tag">Batch Screening</span>
+        </div>
+
+        <div class="app-actions">
+          <a href="https://tpa-dssc.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
+            <i class="bi bi-play-circle me-1"></i> Launch Streamlit App
+          </a>
+          <a href="tpa-dssc.html" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-info-circle me-1"></i> Guide &amp; Details
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- APP 6: pH-Value Estimator (Nature Sci Rep 2022) -->
+    <div class="col-lg-6 app-card-wrapper" data-category="sensors">
+      <div class="app-card-v2">
+        <div class="app-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="app-icon-wrap" style="color:var(--clr-rose);background:rgba(244,63,94,0.12);">
+              <i class="bi bi-eyedropper"></i>
+            </div>
+            <div>
+              <h3 class="mb-0">Fast pH Estimator (Colorimetric)</h3>
+              <div class="small text-muted">Nature Sci Rep (2022) Publication</div>
+            </div>
+          </div>
+          <span class="pulse-badge active">
+            <span class="dot"></span> Published &amp; Live
+          </span>
+        </div>
+
+        <p class="desc">
+          Facile and highly precise pH-value estimation using ubiquitous standard commercial pH test paper based on machine learning algorithms and everyday mobile devices.
+        </p>
+
+        <ul class="spec-list">
+          <li><i class="bi bi-image"></i> <strong>Inputs:</strong> Mobile camera snapshot or gallery image</li>
+          <li><i class="bi bi-cpu"></i> <strong>Algorithm:</strong> K-Nearest Neighbors (KNN) classifier / regressor</li>
+          <li><i class="bi bi-journal-text"></i> <strong>Citation:</strong> <em>Sci Rep</em> 12, 22617 (2022) · DOI: 10.1038/s41598-022-27054-5</li>
+        </ul>
+
+        <div class="tech-tags">
+          <span class="tech-tag">KNN Machine Learning</span>
+          <span class="tech-tag">Mobile Sensor</span>
+          <span class="tech-tag">Nature Sci Rep</span>
+          <span class="tech-tag">Colorimetry</span>
+        </div>
+
+        <div class="app-actions">
+          <a href="https://elsenety-ph4-ph-app4-pazg10.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Launch App
+          </a>
+          <a href="https://www.nature.com/articles/s41598-022-27054-5" target="_blank" class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-journal-check me-1"></i> Read Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Infographic Pipeline Section -->
+  <section class="mt-5 pt-4">
+    <div class="p-4 p-md-5 rounded-4 bg-body border shadow-sm">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge px-3 py-2 rounded-pill bg-primary bg-opacity-10 text-primary fw-semibold mb-2">Computational Workflow</span>
+        <h2 class="fw-bold">From Chemical Structure to Predictive Intelligence</h2>
+        <p class="text-secondary small">How our AI models translate molecular SMILES and optical inputs into reliable physical properties in milliseconds.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="pipeline-step">
+            <div class="step-badge">1</div>
+            <h5 class="fw-bold mb-2">Molecular Encoding</h5>
+            <p class="small text-secondary mb-0">Chemical structures are parsed via RDKit into canonical SMILES and converted into high-dimensional Daylight, Morgan, or MACCS bit vectors.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pipeline-step">
+            <div class="step-badge">2</div>
+            <h5 class="fw-bold mb-2">Deep Neural Inference</h5>
+            <p class="small text-secondary mb-0">Trained multilayer perceptrons (MLPs) and ensemble neural architectures evaluate complex non-linear electronic interactions without costly DFT runs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pipeline-step">
+            <div class="step-badge">3</div>
+            <h5 class="fw-bold mb-2">Actionable Predictions</h5>
+            <p class="small text-secondary mb-0">Researchers receive instantaneous predictions for PCE%, absorption maxima, or pH metrics to prioritize synthetic candidate targets in the wet lab.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-4">
+        <div class="footer-brand">Dr. Mohamed Elsenety</div>
+        <div class="footer-tagline">Materials Science · DFT · Machine Learning</div>
+        <div class="footer-tagline mt-1">
+          <i class="bi bi-building me-1"></i> NCSR "Demokritos", Athens &amp; Al-Azhar University, Cairo
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Navigation</h6>
+        <ul class="list-unstyled mb-0" style="font-size:.875rem;">
+          <li class="mb-1"><a href="index.html" style="color:var(--text-secondary);text-decoration:none;">Home</a></li>
+          <li class="mb-1"><a href="cv.html" style="color:var(--text-secondary);text-decoration:none;">Curriculum Vitae</a></li>
+          <li class="mb-1"><a href="publications.html" style="color:var(--text-secondary);text-decoration:none;">Publications</a></li>
+          <li class="mb-1"><a href="gallery.html" style="color:var(--text-secondary);text-decoration:none;">Gallery</a></li>
+          <li class="mb-1"><a href="ml.html" style="color:var(--text-secondary);text-decoration:none;">ML Applications</a></li>
+          <li class="mb-1"><a href="contact.html" style="color:var(--text-secondary);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Connect</h6>
+        <div class="footer-social d-flex gap-2 flex-wrap">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" title="Google Scholar"><i class="bi bi-google"></i></a>
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" title="ORCID"><i class="bi bi-person-circle"></i></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" title="Scopus"><i class="bi bi-journal"></i></a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+          <a href="contact.html" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © <span id="year"></span> Dr. Mohamed Mahmoud Elsenety — All rights reserved. &nbsp;·&nbsp;
+      <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+  // Filter buttons interaction
+  const filterButtons = document.querySelectorAll('#appFilterGroup .filter-btn');
+  const appCards = document.querySelectorAll('.app-card-wrapper');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+      appCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>

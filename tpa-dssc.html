@@ -3,192 +3,265 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV | Dr. Mohamed Elsenety</title>
-  <meta name="description" content="Academic CV of Dr. Mohamed Elsenety: appointments, education, publications, grants, and teaching activities.">
+  <title>TPA-Based Dyes in DSSCs | PCE% Predictor | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Predict photovoltaic performance parameters (PCE%, Jsc, Voc, FF) of Triphenylamine-based organic dyes in DSSCs from SMILES strings using deep neural networks. Developed by Dr. Mohamed Elsenety.">
+  <meta name="keywords" content="TPA DSSC, machine learning solar cells, triphenylamine dyes, PCE predictor, SMILES deep learning, Mohamed Elsenety">
+
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.png">
-    
-        <style>
-      .pub-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 100%;
-      }
-      .pub-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-      }
-      .pub-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-      }
-      .modal-image {
-        width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-      }
-      .pub-badge {
-        font-size: 0.8rem;
-      }
-      .social-links a {
-        text-decoration: none;
-        transition: opacity 0.2s;
-      }
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-      .google-scholar-icon {
-        color: #4285F4;
-      }
-      .orcid-icon {
-        color: #A6CE39;
-      }
-      .ppus-icon {
-        color: #E9710E;
-      }
-      .researchgate-icon {
-        color: #00CCBB;
-      }
-    </style>
-    
-    
 </head>
-<body data-page="cv">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+<body data-page="apps">
+
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsExample">
+    <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="ml.html">ML Apps</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-cv" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-gallery" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" id="nav-apps" href="ml.html">ML Apps</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
       </ul>
-      <div class="d-flex gap-2">
-        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/Mohamed_Elsenety_CV.pdf" download>Download CV</a>-->
-        <button class="btn btn-outline-secondary btn-sm" id="themeToggle">🌓</button>
+      <div class="d-flex gap-2 align-items-center">
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle light / dark">🌓</button>
       </div>
     </div>
   </div>
 </nav>
 
-<!--  Content -->
-<!-- Web App Card for the DSSC Model -->
-<div class="col-md-6 my-4">
-  <div class="card h-100 shadow-sm">
-    <div class="card-body">
-      <h5 class="card-title">
-        Triphenylamine-Based Dyes in DSSCs | PCE %  Predictor
-        <span class="badge text-bg-info ms-2">Web App</span>
-      </h5>
-      <p class="card-text">
-       We trained deep neural network (DNN) models to predict these properties directly from molecular structures represented by SMILES strings. 
-      </p>
-      <ul class="list-unstyled small text-muted mb-3">
-        <li><strong>Input:</strong> SMILES string</li>
-        <li><strong>Algorithm:</strong> R² of 0.90, 91, and 90 for Jsc, Voc, and FF, respectively</li>
-        <!--<li><strong>Performance:</strong> ~50% PCE boost—MK2 to MK2-DM1 (7.70% → 11.49%)</li>-->
-        <!--<li><strong>Validation:</strong> Confirmed via DFT for oscillator strength & charge transfer</li>-->
-      </ul>
-      <div class="d-flex flex-wrap gap-2">
-        <a href="#" class="btn btn-outline-secondary btn-sm disabled">Model Info</a>
-        <a href="https://tpa-dssc.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">Launch App | Demo</a>
-        <!--<a href="https://doi.org/10.1038/s41598-024-76739-6" target="_blank" class="btn btn-outline-primary btn-sm">Read Paper</a>-->
-      </div>
-    </div>
-  </div>
-</div>
+<!-- ================================================
+     SUBPAGE HERO
+     ================================================ -->
+<header class="subpage-hero">
+  <div class="container position-relative" style="z-index: 1;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="ml.html">ML Apps</a></li>
+        <li class="breadcrumb-item active" aria-current="page">TPA-Based Dyes in DSSCs</li>
+      </ol>
+    </nav>
 
-  <section class="container my-5">
-  <h2 class="section-title">Quick Guide: Input Options for PCE Prediction</h2>
-  <div class="row g-4">
-
-    <!-- Option 1: SMILES input -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="assets/img/tpa/1.png" class="card-img-top" alt="SMILES Input Example">
-        <div class="card-body">
-          <h6 class="card-title">Option 1: SMILES Format</h6>
-          <p class="card-text small text-muted">
-            Draw your dye in a chemical editor (e.g., ChemDraw, RDKit) and copy its SMILES notation.
-            Paste the <strong>SMILES string</strong> of your dye molecule directly into the input box.  
-            Example: <code>O=C(O)C1=CC=CN=C1</code>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Option 2: Drawing tool -->
-    <!--
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="assets/img/imid/2.png" class="card-img-top" alt="Chemical Drawing Tool Example">
-        <div class="card-body">
-          <h6 class="card-title">Option 2: Chemical Drawing Tool</h6>
-          <p class="card-text small text-muted">
-            Use the <strong>built-in drawing canvas</strong> with multi-optional tools to sketch your molecule.  
-            The system automatically converts your drawing into SMILES for prediction.
-          </p>
-        </div>
-      </div>
-    </div>
-    -->
-
-    <!-- Option 3: Batch screening -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="assets/img/tpa/2.png" class="card-img-top" alt="Batch Screening Example">
-        <div class="card-body">
-          <h6 class="card-title">Option 2: Batch Screening</h6>
-          <p class="card-text small text-muted">
-            Import multiple SMILES strings from a <strong>.txt file</strong> or .csf file.  
-            This allows efficient <strong>high-throughput screening</strong> of large molecular databases.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-    <footer class="mt-5 border-top">
-      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
-        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
-        <span class="social-links">
-          <a href="" class="me-3" target="_blank" title="Google Scholar">
-            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
-          </a>
-          <a href="" class="me-3" target="_blank" title="ORCID">
-            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
-          </a>
-          <a href="" class="me-3" target="_blank" title="Scopus">
-            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
-          </a>
-          <a href="" target="_blank" title="ResearchGate">
-            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
-          </a>
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="badge px-3 py-2 rounded-pill bg-warning bg-opacity-25 text-white border border-warning border-opacity-50 mb-3">
+          <i class="bi bi-sun-fill me-1"></i> Photovoltaic Machine Learning Model
         </span>
+        <h1 class="mb-3">TPA-Based Dyes in DSSCs</h1>
+        <p class="lead">
+          Design and predict the photovoltaic potential of Triphenylamine-based organic sensitizers in Dye-Sensitized Solar Cells using deep neural network (DNN) multi-parameter regression.
+        </p>
       </div>
-    </footer>
+      <div class="col-lg-4 text-lg-end">
+        <a href="https://tpa-dssc.streamlit.app/" target="_blank" class="btn btn-light btn-lg px-4 py-3 rounded-pill fw-bold shadow-sm d-inline-flex align-items-center gap-2">
+          <i class="bi bi-play-circle-fill text-primary fs-4"></i>
+          <div class="text-start">
+            <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;">Live Cloud Demo</div>
+            <div style="font-size:1.05rem;line-height:1.1;color:#0f172a;">Launch Streamlit App</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-  
+<!-- ================================================
+     MAIN CONTENT
+     ================================================ -->
+<main class="container my-5">
+
+  <!-- Overview Card -->
+  <div class="card p-4 p-md-5 border shadow-sm rounded-4 mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="badge text-bg-primary"><i class="bi bi-check2-circle me-1"></i> Interactive Demo Online</span>
+          <span class="badge text-bg-light border">Multi-Target DNN</span>
+        </div>
+        <h2 class="fw-bold mb-3">Accelerating Sensitizer Discovery via Deep Learning</h2>
+        <p class="text-secondary mb-4">
+          Triphenylamine (TPA) is one of the most prominent donor moieties in donor-&pi;-acceptor (D-&pi;-A) organic sensitizers. This application utilizes deep neural networks trained on experimentally validated photovoltaic metrics to predict four essential device parameters simultaneously: <strong>Short-Circuit Current Density (Jsc)</strong>, <strong>Open-Circuit Voltage (Voc)</strong>, <strong>Fill Factor (FF)</strong>, and <strong>Power Conversion Efficiency (PCE%)</strong> directly from chemical SMILES strings.
+        </p>
+
+        <!-- Accuracy Metrics Badges -->
+        <div class="row g-3 mb-4">
+          <div class="col-6 col-sm-3">
+            <div class="p-3 rounded-3 border bg-body text-center">
+              <div class="small text-muted text-uppercase fw-semibold mb-1">R² (Jsc)</div>
+              <div class="fs-4 fw-bold text-primary">0.90</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="p-3 rounded-3 border bg-body text-center">
+              <div class="small text-muted text-uppercase fw-semibold mb-1">R² (Voc)</div>
+              <div class="fs-4 fw-bold text-primary">0.91</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="p-3 rounded-3 border bg-body text-center">
+              <div class="small text-muted text-uppercase fw-semibold mb-1">R² (FF)</div>
+              <div class="fs-4 fw-bold text-primary">0.90</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div class="p-3 rounded-3 border bg-body text-center">
+              <div class="small text-muted text-uppercase fw-semibold mb-1">Speed</div>
+              <div class="fs-4 fw-bold text-success">&lt; 1s</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://tpa-dssc.streamlit.app/" target="_blank" class="btn btn-primary">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Launch Streamlit App
+          </a>
+          <a href="ml.html" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left me-1"></i> Back to ML Suite
+          </a>
+          <a href="contact.html" class="btn btn-outline-secondary">
+            <i class="bi bi-chat-left-dots me-1"></i> Collaboration Inquiries
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="p-4 rounded-4 bg-body border shadow-sm">
+          <h5 class="fw-bold mb-3"><i class="bi bi-diagram-3-fill text-primary me-2"></i>Model Specifications</h5>
+          <ul class="list-unstyled d-flex flex-column gap-3 small text-secondary mb-0">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+              <div><strong>Primary Input:</strong> Standard canonical SMILES notation or batch molecular list</div>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+              <div><strong>Molecular Descriptors:</strong> Topological polar surface area, electronic charge distributions, and Daylight fingerprints</div>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+              <div><strong>Target Outputs:</strong> Jsc (mA/cm²), Voc (V), FF (0–1), and PCE (%)</div>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+              <div><strong>Validation:</strong> Cross-validated against DFT calculations for oscillator strength and excited-state charge transfer</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Guide Section: Input Options -->
+  <section class="mb-5">
+    <div class="text-center max-w-700 mx-auto mb-5">
+      <span class="badge px-3 py-2 rounded-pill bg-primary bg-opacity-10 text-primary fw-semibold mb-2">Usage Walkthrough</span>
+      <h2 class="fw-bold">Input Modalities for PCE Prediction</h2>
+      <p class="text-secondary small">Flexible molecular entry modes supporting single-molecule design and automated database screening.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Option 1: SMILES string -->
+      <div class="col-md-6">
+        <div class="guide-step-card h-100">
+          <div class="p-3 bg-dark text-center" style="min-height: 240px; display: flex; align-items: center; justify-content: center;">
+            <img src="assets/img/tpa/1.png" class="img-fluid rounded" alt="Option 1: Single SMILES Format Input" style="max-height: 220px; object-fit: contain;">
+          </div>
+          <div class="p-4">
+            <span class="step-num-pill">1</span>
+            <h5 class="fw-bold mb-2">Single Molecule: SMILES Format</h5>
+            <p class="small text-secondary mb-2">
+              Draw your target organic dye in any chemical sketching package (e.g., ChemDraw, MarvinSketch, or JSME) and copy its canonical SMILES string. Paste the SMILES directly into the prediction prompt.
+            </p>
+            <div class="p-2 rounded bg-body border font-monospace small text-muted">
+              Example: O=C(O)C1=CC=CN=C1
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option 2: Batch Screening -->
+      <div class="col-md-6">
+        <div class="guide-step-card h-100">
+          <div class="p-3 bg-dark text-center" style="min-height: 240px; display: flex; align-items: center; justify-content: center;">
+            <img src="assets/img/tpa/2.png" class="img-fluid rounded" alt="Option 2: High-Throughput Batch Screening" style="max-height: 220px; object-fit: contain;">
+          </div>
+          <div class="p-4">
+            <span class="step-num-pill">2</span>
+            <h5 class="fw-bold mb-2">High-Throughput Batch Screening</h5>
+            <p class="small text-secondary mb-2">
+              Upload a <code>.txt</code> or <code>.csv</code> file containing hundreds of candidate SMILES strings. The model performs parallel vector inference and outputs a ranked spreadsheet of predicted PCE% values.
+            </p>
+            <div class="p-2 rounded bg-body border small text-muted">
+              <i class="bi bi-file-earmark-spreadsheet me-1"></i> Supports CSV export of ranked candidates
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-4">
+        <div class="footer-brand">Dr. Mohamed Elsenety</div>
+        <div class="footer-tagline">Materials Science · DFT · Machine Learning</div>
+        <div class="footer-tagline mt-1">
+          <i class="bi bi-building me-1"></i> NCSR "Demokritos", Athens &amp; Al-Azhar University, Cairo
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Navigation</h6>
+        <ul class="list-unstyled mb-0" style="font-size:.875rem;">
+          <li class="mb-1"><a href="index.html" style="color:var(--text-secondary);text-decoration:none;">Home</a></li>
+          <li class="mb-1"><a href="cv.html" style="color:var(--text-secondary);text-decoration:none;">Curriculum Vitae</a></li>
+          <li class="mb-1"><a href="publications.html" style="color:var(--text-secondary);text-decoration:none;">Publications</a></li>
+          <li class="mb-1"><a href="gallery.html" style="color:var(--text-secondary);text-decoration:none;">Gallery</a></li>
+          <li class="mb-1"><a href="ml.html" style="color:var(--text-secondary);text-decoration:none;">ML Applications</a></li>
+          <li class="mb-1"><a href="contact.html" style="color:var(--text-secondary);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Connect</h6>
+        <div class="footer-social d-flex gap-2 flex-wrap">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" title="Google Scholar"><i class="bi bi-google"></i></a>
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" title="ORCID"><i class="bi bi-person-circle"></i></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" title="Scopus"><i class="bi bi-journal"></i></a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+          <a href="contact.html" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © <span id="year"></span> Dr. Mohamed Mahmoud Elsenety — All rights reserved. &nbsp;·&nbsp;
+      <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
 </body>

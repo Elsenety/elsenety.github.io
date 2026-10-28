@@ -1,206 +1,402 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery | Dr. Mohamed Elsenety</title>
-    <meta name="description" content="Academic profile of Your Name: CV, publications, gallery, and ML apps.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/favicon.png">
-    
-            <style>
-      .pub-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 100%;
-      }
-      .pub-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-      }
-      .pub-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-      }
-      .modal-image {
-        width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-      }
-      .pub-badge {
-        font-size: 0.8rem;
-      }
-      .social-links a {
-        text-decoration: none;
-        transition: opacity 0.2s;
-      }
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-      .google-scholar-icon {
-        color: #4285F4;
-      }
-      .orcid-icon {
-        color: #A6CE39;
-      }
-      .scopus-icon {
-        color: #E9710E;
-      }
-      .researchgate-icon {
-        color: #00CCBB;
-      }
-    </style>
-    
-  </head>
-  <body data-page="gallery">
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Photographic record of Dr. Mohamed Elsenety: international conferences with Prof. Michael Grätzel and Prof. Polycarpos Falaras, laboratories at Demokritos and Taiwan, and scientific awards.">
+  <meta name="keywords" content="Mohamed Elsenety gallery, Demokritos, Michael Gratzel, materials science conference, Marie Curie ITN">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <style>
+    .gallery-filter-btn {
+      border-radius: var(--radius-pill);
+      padding: 0.45rem 1.25rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--surface-border);
+      background: var(--surface-card);
+      color: var(--text-secondary);
+      transition: all var(--t-fast);
+      cursor: pointer;
+    }
+    .gallery-filter-btn:hover, .gallery-filter-btn.active {
+      background: var(--grad-accent);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 14px rgba(14,165,233,0.3);
+    }
+    .modal-img-container {
+      background: #090d16;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 350px;
+      max-height: 80vh;
+    }
+    .modal-img-container img {
+      max-height: 80vh;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body data-page="gallery">
+
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample" aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample">
+    <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-cv" href="cv.html">CV</a></li>
-        <!--<li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>-->
-        <li class="nav-item"><a class="nav-link" id="nav-gallery" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link active" id="nav-gallery" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-apps" href="ml.html">ML Apps</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
       </ul>
       <div class="d-flex gap-2 align-items-center">
-        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/YourName_CV.pdf" download>Download CV</a>-->
-        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle light / dark">🌓</button>
       </div>
     </div>
   </div>
 </nav>
-<section class="container my-5">
-  <h1 class="mb-4">Gallery</h1>
-  <div class="row g-3">
-    <!-- Repeat cards for images -->
-    
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/g1.jpg" class="card-img-top" alt="Prof. Michael Grätzel – Prof. Polycarpos Falaras " data-caption="Prof. Michael Grätzel – Prof. Polycarpos Falaras " data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted">Prof. Michael Grätzel – Prof. Polycarpos Falaras </p>
+
+<!-- ================================================
+     SUBPAGE HERO
+     ================================================ -->
+<header class="subpage-hero">
+  <div class="container position-relative" style="z-index: 1;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+      </ol>
+    </nav>
+
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="badge px-3 py-2 rounded-pill bg-primary bg-opacity-25 text-white border border-primary border-opacity-50 mb-3">
+          <i class="bi bi-camera-fill me-1"></i> Visual Milestones &amp; Academic Engagements
+        </span>
+        <h1 class="mb-3">Academic &amp; Research Gallery</h1>
+        <p class="lead">
+          Snapshots from international summits, collaborative lab research at Demokritos and Taiwan, training workshops with pioneers in photovoltaics, and scientific honors.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-inline-flex align-items-center gap-3 p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25 text-start">
+          <i class="bi bi-images fs-2 text-info"></i>
+          <div>
+            <div class="fw-bold text-white">Visual Archive</div>
+            <div class="small text-white-50">Conferences, Labs &amp; Awards</div>
+          </div>
         </div>
       </div>
     </div>
-    
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/g2.jpg" class="card-img-top" alt="Department of Chemical Engineering, National Cheng Kung University, Tainan City, Taiwan" data-caption="Department of Chemical Engineering, National Cheng Kung University, Tainan City, Taiwan" data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted"> Department of Chemical Engineering, National Cheng Kung University, Tainan City, Taiwan</p>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/5g.jpg" class="card-img-top" alt="Institute of Nanoscience and Nanotechnology (ΙΝΝ) NCSR “Demokritos”, Athens, Greece." data-caption="Institute of Nanoscience and Nanotechnology (ΙΝΝ) NCSR “Demokritos”, Athens, Greece." data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted">Institute of Nanoscience and Nanotechnology (ΙΝΝ) NCSR “Demokritos”, Athens, Greece.</p>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/6g.jpg" class="card-img-top" alt="Group meeting — Spring 2025" data-caption="Group meeting — Spring 2025" data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted">The City of Scientific research and technological applications “SRTA-City”</p>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/7g.jpg" class="card-img-top" alt="Syndicate of Scientific Professions." data-caption="Syndicate of Scientific Professions" data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted">Syndicate of Scientific Professions.</p>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/8g.jpg" class="card-img-top" alt="Large-scale solar cell technology" data-caption="Large-scale solar cell technology" data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted">Large-scale solar cell technology </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/9g.png" class="card-img-top" alt="Training Event (ΤΕ3) - MAESTRO Marie Curie ITN 2019" data-caption="Training Event (ΤΕ3) - MAESTRO Marie Curie ITN 2019" data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted">Training Event (ΤΕ3) - MAESTRO Marie Curie ITN 2019</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card h-100 gallery-card">
-        <img src="assets/img/11g.png" class="card-img-top" alt="Training Event (ΤΕ3) - MAESTRO Marie Curie ITN 2019" data-caption="Training Event (ΤΕ3) - MAESTRO Marie Curie ITN 2019" data-bs-toggle="modal" data-bs-target="#imgModal">
-        <div class="card-body">
-          <p class="card-text small text-muted">Training Event (ΤΕ3) - MAESTRO Marie Curie ITN 2019</p>
-        </div>
-      </div>
-    </div>
-
-
-    
   </div>
-</section>
+</header>
 
-<!-- Modal template -->
-<div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-body p-0">
-        <img id="modalImg" src="" alt="" class="img-fluid w-100 rounded-bottom-4">
+<!-- ================================================
+     FILTER BAR
+     ================================================ -->
+<div class="sticky-top bg-body border-bottom py-3 shadow-sm" style="top: 72px; z-index: 990;">
+  <div class="container">
+    <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+      <div class="d-flex flex-wrap gap-2" id="galleryFilterGroup">
+        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+        <button class="gallery-filter-btn" data-filter="conferences">Conferences &amp; Pioneers</button>
+        <button class="gallery-filter-btn" data-filter="institutions">Institutions &amp; Labs</button>
+        <button class="gallery-filter-btn" data-filter="workshops">Workshops &amp; Team</button>
       </div>
-      <div class="modal-footer">
-        <span id="modalCaption" class="small text-muted"></span>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <div class="small text-muted d-none d-md-block">
+        <i class="bi bi-zoom-in me-1"></i> Click any image for full-resolution view
       </div>
     </div>
   </div>
 </div>
-    <footer class="mt-5 border-top">
-      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
-        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
-        <span class="social-links">
-          <a href="" class="me-3" target="_blank" title="Google Scholar">
-            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
-          </a>
-          <a href="https://orcid.org/0000-0001-5107-5959" class="me-3" target="_blank" title="ORCID">
-            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
-          </a>
-          <a href="" class="me-3" target="_blank" title="Scopus">
-            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
-          </a>
-          <a href="" target="_blank" title="ResearchGate">
-            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
-          </a>
-        </span>
+
+<!-- ================================================
+     GALLERY GRID
+     ================================================ -->
+<main class="container my-5">
+  <div class="row g-4" id="galleryGrid">
+
+    <!-- PHOTO 1: Gratzel & Falaras -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="conferences">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/g1.jpg" data-caption="With Prof. Michael Grätzel (father of Dye-Sensitized Solar Cells, EPFL) and Prof. Polycarpos Falaras (NCSR Demokritos)">
+          <span class="gallery-overlay-badge"><i class="bi bi-people-fill me-1"></i> Keynote</span>
+          <img src="assets/img/g1.jpg" alt="Prof. Michael Grätzel and Prof. Polycarpos Falaras" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Prof. Michael Grätzel &amp; Prof. Polycarpos Falaras — International Solar Summit</p>
+        </div>
       </div>
-    </footer>
+    </div>
+
+    <!-- PHOTO 2: Taiwan NCKU -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="institutions">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/g2.jpg" data-caption="Department of Chemical Engineering, National Cheng Kung University (NCKU), Tainan City, Taiwan">
+          <span class="gallery-overlay-badge"><i class="bi bi-building me-1"></i> Taiwan</span>
+          <img src="assets/img/g2.jpg" alt="Department of Chemical Engineering, NCKU Taiwan" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Dept. of Chemical Engineering, National Cheng Kung University (NCKU), Taiwan</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 3: Demokritos -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="institutions">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/5g.jpg" data-caption="Institute of Nanoscience and Nanotechnology (INN), NCSR “Demokritos”, Athens, Greece">
+          <span class="gallery-overlay-badge"><i class="bi bi-geo-alt-fill me-1"></i> Demokritos</span>
+          <img src="assets/img/5g.jpg" alt="Institute of Nanoscience and Nanotechnology INN Demokritos" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Institute of Nanoscience &amp; Nanotechnology (INN), NCSR “Demokritos”, Athens</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 4: SRTA-City -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="institutions">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/6g.jpg" data-caption="The City of Scientific Research and Technological Applications (SRTA-City), Alexandria">
+          <span class="gallery-overlay-badge"><i class="bi bi-mortarboard me-1"></i> SRTA-City</span>
+          <img src="assets/img/6g.jpg" alt="Scientific Research and Technological Applications SRTA-City" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Scientific Research &amp; Technological Applications Center (SRTA-City)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 5: Syndicate of Scientific Professions -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="conferences">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/7g.jpg" data-caption="Syndicate of Scientific Professions — Annual Academic Assembly &amp; Honors">
+          <span class="gallery-overlay-badge"><i class="bi bi-award-fill me-1"></i> Syndicate</span>
+          <img src="assets/img/7g.jpg" alt="Syndicate of Scientific Professions" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Syndicate of Scientific Professions — Keynote &amp; Scientific Gathering</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 6: Solar cell technology -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="workshops">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/8g.jpg" data-caption="Large-scale solar cell technology and photovoltaic module fabrication">
+          <span class="gallery-overlay-badge"><i class="bi bi-sun-fill me-1"></i> PV Devices</span>
+          <img src="assets/img/8g.jpg" alt="Large-scale solar cell technology" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Large-Scale Solar Cell Device Testing &amp; Photovoltaic Prototyping</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 7: MAESTRO Marie Curie 1 -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="workshops">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/9g.png" data-caption="Training Event (TE3) — MAESTRO Marie Skłodowska-Curie ITN European Consortium">
+          <span class="gallery-overlay-badge"><i class="bi bi-flag-fill me-1"></i> Marie Curie</span>
+          <img src="assets/img/9g.png" alt="Training Event TE3 MAESTRO Marie Curie ITN" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>MAESTRO Marie Curie ITN — European Perovskite Training Event (TE3)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 8: MAESTRO Marie Curie 2 -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="workshops">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/11g.png" data-caption="MAESTRO Marie Skłodowska-Curie ITN Research Workshop &amp; Technical Consortium">
+          <span class="gallery-overlay-badge"><i class="bi bi-flag-fill me-1"></i> EU ITN</span>
+          <img src="assets/img/11g.png" alt="MAESTRO Marie Curie ITN Research Workshop" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>MAESTRO Research Workshop — Advanced Perovskite Characterization</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 9: International Conference -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="conferences">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/conference-2024.jpg" data-caption="Oral Presentation &amp; Technical Session at International Materials Conference">
+          <span class="gallery-overlay-badge"><i class="bi bi-mic-fill me-1"></i> Speaker</span>
+          <img src="assets/img/conference-2024.jpg" alt="Oral Presentation at International Conference" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>International Materials Conference — Oral Presentation on Perovskite ML</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 10: Advanced Lab Setup -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="institutions">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/lab-setup.jpg" data-caption="Advanced Photovoltaic Characterization &amp; Solar Simulator Test Station">
+          <span class="gallery-overlay-badge"><i class="bi bi-flask-fill me-1"></i> Lab Bench</span>
+          <img src="assets/img/lab-setup.jpg" alt="Advanced Photovoltaic Characterization Lab" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Materials &amp; Thin-Film Solar Cell Synthesis Laboratory Station</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 11: Scientific Award -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="conferences">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/award.jpg" data-caption="Academic Fellowship &amp; Research Excellence Recognition Ceremony">
+          <span class="gallery-overlay-badge"><i class="bi bi-trophy-fill me-1"></i> Honors</span>
+          <img src="assets/img/award.jpg" alt="Academic Fellowship and Research Award" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Research Fellowship &amp; Scientific Achievement Honors Ceremony</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO 12: Team & Collaboration -->
+    <div class="col-sm-6 col-lg-4 gallery-col" data-category="workshops">
+      <div class="gallery-item-v2">
+        <div class="gallery-img-wrap" data-bs-toggle="modal" data-bs-target="#imgModal" data-src="assets/img/team.jpg" data-caption="Multidisciplinary research team meeting and graduation project mentorship session">
+          <span class="gallery-overlay-badge"><i class="bi bi-people-fill me-1"></i> Mentorship</span>
+          <img src="assets/img/team.jpg" alt="Research Team Meeting" loading="lazy">
+        </div>
+        <div class="gallery-caption-wrap">
+          <p>Graduate Research Mentorship &amp; Cross-Disciplinary Team Discussion</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ================================================
+     LIGHTBOX MODAL
+     ================================================ -->
+<div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="modalCaption" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0 overflow-hidden shadow-lg" style="border-radius:var(--radius-lg);">
+      <div class="modal-header border-bottom py-3">
+        <h6 class="modal-title fw-bold text-truncate" id="modalCaption">Image Preview</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 modal-img-container">
+        <img id="modalImg" src="" alt="Full Resolution Image Preview" class="img-fluid">
+      </div>
+      <div class="modal-footer border-top py-2 d-flex justify-content-between">
+        <span class="small text-muted"><i class="bi bi-info-circle me-1"></i> Academic Archive · Dr. Mohamed Elsenety</span>
+        <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-4">
+        <div class="footer-brand">Dr. Mohamed Elsenety</div>
+        <div class="footer-tagline">Materials Science · DFT · Machine Learning</div>
+        <div class="footer-tagline mt-1">
+          <i class="bi bi-building me-1"></i> NCSR "Demokritos", Athens &amp; Al-Azhar University, Cairo
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Navigation</h6>
+        <ul class="list-unstyled mb-0" style="font-size:.875rem;">
+          <li class="mb-1"><a href="index.html" style="color:var(--text-secondary);text-decoration:none;">Home</a></li>
+          <li class="mb-1"><a href="cv.html" style="color:var(--text-secondary);text-decoration:none;">Curriculum Vitae</a></li>
+          <li class="mb-1"><a href="publications.html" style="color:var(--text-secondary);text-decoration:none;">Publications</a></li>
+          <li class="mb-1"><a href="gallery.html" style="color:var(--text-secondary);text-decoration:none;">Gallery</a></li>
+          <li class="mb-1"><a href="ml.html" style="color:var(--text-secondary);text-decoration:none;">ML Applications</a></li>
+          <li class="mb-1"><a href="contact.html" style="color:var(--text-secondary);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Connect</h6>
+        <div class="footer-social d-flex gap-2 flex-wrap">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" title="Google Scholar"><i class="bi bi-google"></i></a>
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" title="ORCID"><i class="bi bi-person-circle"></i></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" title="Scopus"><i class="bi bi-journal"></i></a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+          <a href="contact.html" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © <span id="year"></span> Dr. Mohamed Mahmoud Elsenety — All rights reserved. &nbsp;·&nbsp;
+      <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+  // Gallery Lightbox Modal Handler
+  const imgModal = document.getElementById('imgModal');
+  if (imgModal) {
+    imgModal.addEventListener('show.bs.modal', function (event) {
+      const trigger = event.relatedTarget;
+      const src = trigger.getAttribute('data-src');
+      const caption = trigger.getAttribute('data-caption') || 'Image Preview';
+      document.getElementById('modalImg').setAttribute('src', src);
+      document.getElementById('modalCaption').textContent = caption;
+    });
+  }
+
+  // Gallery Category Filter
+  const galleryFilters = document.querySelectorAll('#galleryFilterGroup .gallery-filter-btn');
+  const galleryCols = document.querySelectorAll('.gallery-col');
+
+  galleryFilters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      galleryFilters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+      galleryCols.forEach(col => {
+        if (filter === 'all' || col.getAttribute('data-category') === filter) {
+          col.style.display = '';
+        } else {
+          col.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>

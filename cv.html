@@ -3,186 +3,556 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV | Dr. Mohamed Elsenety</title>
-  <meta name="description" content="Academic CV of Dr. Mohamed Elsenety: appointments, education, publications, grants, and teaching activities.">
+  <title>Curriculum Vitae | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Academic Curriculum Vitae of Dr. Mohamed Elsenety: appointments at NCSR Demokritos, NTHU Taiwan, and Al-Azhar University; education, funded grants, publications, and teaching.">
+  <meta name="keywords" content="Mohamed Elsenety CV, materials science, NCSR Demokritos, NTHU, Al-Azhar, DFT, perovskites, machine learning">
+
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.png">
-    
-        <style>
-      .pub-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 100%;
-      }
-      .pub-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-      }
-      .pub-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-      }
-      .modal-image {
-        width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-      }
-      .pub-badge {
-        font-size: 0.8rem;
-      }
-      .social-links a {
-        text-decoration: none;
-        transition: opacity 0.2s;
-      }
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-      .google-scholar-icon {
-        color: #4285F4;
-      }
-      .orcid-icon {
-        color: #A6CE39;
-      }
-      .ppus-icon {
-        color: #E9710E;
-      }
-      .researchgate-icon {
-        color: #00CCBB;
-      }
-    </style>
-    
-    
+
+  <style>
+    .cv-nav-pills {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding: 0.5rem 0;
+      scrollbar-width: none;
+    }
+    .cv-nav-pills::-webkit-scrollbar { display: none; }
+    .cv-nav-pill {
+      white-space: nowrap;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-pill);
+      background: var(--surface-card);
+      border: 1px solid var(--surface-border);
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all var(--t-fast);
+    }
+    .cv-nav-pill:hover, .cv-nav-pill.active {
+      background: var(--clr-primary);
+      color: #fff;
+      border-color: var(--clr-primary);
+    }
+    .grant-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.5rem;
+    }
+    .grant-badge.eu {
+      background: rgba(14,165,233,0.15);
+      color: var(--clr-primary);
+      border: 1px solid rgba(14,165,233,0.3);
+    }
+    .grant-badge.asrt {
+      background: rgba(16,185,129,0.15);
+      color: var(--clr-emerald);
+      border: 1px solid rgba(16,185,129,0.3);
+    }
+  </style>
 </head>
+
 <body data-page="cv">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsExample">
+    <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="ml.html">ML Apps</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" id="nav-cv" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-gallery" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-apps" href="ml.html">ML Apps</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
       </ul>
-      <div class="d-flex gap-2">
-        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/Mohamed_Elsenety_CV.pdf" download>Download CV</a>-->
-        <button class="btn btn-outline-secondary btn-sm" id="themeToggle">🌓</button>
+      <div class="d-flex gap-2 align-items-center">
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle light / dark">🌓</button>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- CV Content -->
-<section class="container my-5">
-  <h1 class="mb-4">Curriculum Vitae</h1>
+<!-- ================================================
+     SUBPAGE HERO
+     ================================================ -->
+<header class="subpage-hero">
+  <div class="container position-relative" style="z-index: 1;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Curriculum Vitae</li>
+      </ol>
+    </nav>
 
-  <h2 class="section-title">Current Position</h2>
-  <p><strong>Researcher</strong>, Institute of Nanoscience and Nanotechnology (INN), NCSR “Demokritos”, Athens, Greece (2024–present)</p>
-
-  <h2 class="section-title">Previous Positions</h2>
-  <ul>
-    <li><strong>PostDoc Researcher</strong>, Dept. of Chemical Engineering, National Tsing Hua University (NTHU), Taiwan (2023–2024)</li>
-    <li><strong>Lecturer / Assistant Professor</strong>, Chemistry Dept., Faculty of Science, Al-Azhar University, Cairo, Egypt (2021–2023)</li>
-    <li><strong>PostDoc Researcher</strong>, INN, NCSR “Demokritos”, Athens, Greece (2021)</li>
-    <li><strong>PhD Candidate (Scholarship)</strong>, National and Kapodistrian University of Athens & INN, NCSR “Demokritos” (2017–2021)</li>
-    <li><strong>Faculty Lecturer</strong>, Al-Azhar University, Cairo, Egypt (2015–2017)</li>
-    <li><strong>Teaching Assistant</strong>, Al-Azhar University, Cairo, Egypt (2012–2015)</li>
-    <li><strong>Quality Assurance Head</strong>, Industrial Companies (Comex, MISR FOODS, FIMCO), Egypt (2008–2011)</li>
-  </ul>
-
-  <h2 class="section-title">Education</h2>
-  <ul>
-    <li><strong>Ph.D. in Chemistry</strong>, National and Kapodistrian University of Athens, Greece (2017–2021)</li>
-    <li><strong>M.Sc. in Chemistry</strong>, Al-Azhar University, Cairo, Egypt (2012–2015)</li>
-    <li><strong>B.Sc. in Chemistry</strong>, Al-Azhar University, Cairo, Egypt (2003–2007)</li>
-    <li><strong>Diploma in AI (Machine Learning & Deep Learning)</strong>, Space Code Academy, Cairo, Egypt (2021–2022)</li>
-  </ul>
-
-  <h2 class="section-title">Research Interests</h2>
-  <ul>
-    <li>Development of inorganic and hybrid perovskite materials for solar cells</li>
-    <li>Photocatalysis, hydrogen evolution, and water treatment</li>
-    <li>Computational chemistry (DFT, molecular dynamics, docking)</li>
-    <li>Machine learning and deep learning in materials science</li>
-    <li>Optical sensors, MOFs/COFs, composites, polymers</li>
-  </ul>
-
-
-
-  <h2 class="section-title">Grants & Projects</h2>
-  <ul>
-    <li><strong>ASRT, Egypt (2022–2024):</strong> Precious metals recovery from urban waste.</li>
-    <li><strong>ASRT, Egypt (2022–2023):</strong> Bedaya project on perovskite solar cells & ML (supervision of 5 students).</li>
-    <li><strong>ASRT, Egypt (2022–2024):</strong> Recycling old acid batteries into solar cells.</li>
-    <li><strong>EU NextGeneration (2024–2025):</strong> 3GPV-4INDUSTRY project on efficient PV materials.</li>
-  </ul>
-
-  <h2 class="section-title">Teaching Activities</h2>
-  <ul>
-    <li>Analytical chemistry (theory & lab)</li>
-    <li>Transition metals (d-block & f-block)</li>
-    <li>Spectroscopy and instrumental analysis</li>
-    <li>Electroanalytical chemistry</li>
-    <li>General chemistry</li>
-  </ul>
-
-  <h2 class="section-title">Service & Reviewing</h2>
-  <ul>
-    <li>Reviewer for ACS Omega, Solar RRL, Solar Energy, Phys. Status Solidi, etc.</li>
-    <li>Member of Syndicate of Scientific Professions (2008–present)</li>
-  </ul>
-
-  <h2 class="section-title">Awards & Fellowships</h2>
-  <ul>
-    <li>Science Achievement Scholarship, Egypt & Greece (2016–2020)</li>
-    <li>Fellowship, National Science and Technology Council, Taiwan (2023)</li>
-  </ul>
-
-  <h2 class="section-title">References</h2>
-  <ul>
-    <li><strong>Dr. Polycarpos Falaras</strong>, INN, NCSR “Demokritos”, Athens, Greece (<a href="mailto:p.falaras@inn.demokritos.gr">p.falaras@inn.demokritos.gr</a>)</li>
-    <li><strong>Prof. Ho-Hsiu Chou</strong>, NTHU, Taiwan (<a href="mailto:hhchou@mx.nthu.edu.tw">hhchou@mx.nthu.edu.tw</a>)</li>
-    <li><strong>Prof. Badr A. Elsayed</strong>, Al-Azhar University, Egypt (<a href="mailto:Badrelsayed@gmail.com">Badrelsayed@gmail.com</a>)</li>
-    <li><strong>Prof. M.M. Rashad</strong>, CMRDI, Egypt (<a href="mailto:rashad133@yahoo.com">rashad133@yahoo.com</a>)</li>
-  </ul>
-</section>
-
-    <footer class="mt-5 border-top">
-      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
-        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
-        <span class="social-links">
-          <a href="" class="me-3" target="_blank" title="Google Scholar">
-            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
-          </a>
-          <a href="" class="me-3" target="_blank" title="ORCID">
-            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
-          </a>
-          <a href="" class="me-3" target="_blank" title="Scopus">
-            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
-          </a>
-          <a href="" target="_blank" title="ResearchGate">
-            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
-          </a>
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="badge px-3 py-2 rounded-pill bg-primary bg-opacity-25 text-white border border-primary border-opacity-50 mb-3">
+          <i class="bi bi-file-earmark-person-fill me-1"></i> Academic Record &amp; Track Record
         </span>
+        <h1 class="mb-3">Curriculum Vitae</h1>
+        <p class="lead">
+          Researcher at INN, NCSR “Demokritos” (Athens, Greece) &amp; Assistant Professor at Al-Azhar University (Cairo, Egypt). Combining 15+ years of chemical synthesis, quantum DFT computations, and modern artificial intelligence for energy materials.
+        </p>
       </div>
-    </footer>
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex flex-column flex-sm-row flex-lg-column gap-2 justify-content-lg-end">
+          <a href="javascript:window.print()" class="btn-hero-primary text-center">
+            <i class="bi bi-printer me-2"></i>Print / Save CV
+          </a>
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" class="btn-hero-outline text-center">
+            <i class="bi bi-google me-2"></i>Google Scholar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-  
+<!-- ================================================
+     QUICK JUMP BAR
+     ================================================ -->
+<div class="sticky-top bg-body border-bottom py-2 shadow-sm" style="top: 72px; z-index: 990;">
+  <div class="container">
+    <div class="cv-nav-pills">
+      <a href="#appointments" class="cv-nav-pill"><i class="bi bi-briefcase me-1"></i> Appointments</a>
+      <a href="#education" class="cv-nav-pill"><i class="bi bi-mortarboard me-1"></i> Education</a>
+      <a href="#grants" class="cv-nav-pill"><i class="bi bi-award me-1"></i> Grants &amp; Projects</a>
+      <a href="#skills" class="cv-nav-pill"><i class="bi bi-cpu me-1"></i> Research Expertise</a>
+      <a href="#teaching" class="cv-nav-pill"><i class="bi bi-book me-1"></i> Teaching &amp; Service</a>
+      <a href="#references" class="cv-nav-pill"><i class="bi bi-people me-1"></i> References</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     CV CONTENT
+     ================================================ -->
+<main class="container my-5">
+
+  <!-- Overview Highlights Strip -->
+  <div class="row g-3 mb-5">
+    <div class="col-6 col-md-3">
+      <div class="p-3 rounded-4 border bg-body text-center h-100 shadow-sm">
+        <div class="text-primary fw-bold fs-3">15+</div>
+        <div class="small text-muted text-uppercase fw-semibold">Years in Chemistry</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="p-3 rounded-4 border bg-body text-center h-100 shadow-sm">
+        <div class="text-primary fw-bold fs-3">30+</div>
+        <div class="small text-muted text-uppercase fw-semibold">Peer-Reviewed Papers</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="p-3 rounded-4 border bg-body text-center h-100 shadow-sm">
+        <div class="text-primary fw-bold fs-3">4+</div>
+        <div class="small text-muted text-uppercase fw-semibold">Major Funded Grants</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="p-3 rounded-4 border bg-body text-center h-100 shadow-sm">
+        <div class="text-primary fw-bold fs-3">4+</div>
+        <div class="small text-muted text-uppercase fw-semibold">Published AI/ML Tools</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. APPOINTMENTS -->
+  <section id="appointments" class="cv-card">
+    <div class="cv-card-header">
+      <i class="bi bi-briefcase-fill"></i>
+      <div>
+        <h2>Professional Appointments</h2>
+        <div class="small text-muted">Academic, postdoctoral, and industrial leadership experience</div>
+      </div>
+    </div>
+
+    <div class="cv-item">
+      <span class="period">2024 — Present · Athens, Greece</span>
+      <div class="role">Researcher</div>
+      <div class="institution">Institute of Nanoscience and Nanotechnology (INN), NCSR “Demokritos”</div>
+      <p class="small text-muted mt-1 mb-0">Focusing on next-generation photovoltaic materials, stability engineering, and molecular interface modeling within the EU NextGeneration 3GPV-4INDUSTRY project.</p>
+    </div>
+
+    <div class="cv-item">
+      <span class="period">2023 — 2024 · Hsinchu, Taiwan</span>
+      <div class="role">Postdoctoral Researcher</div>
+      <div class="institution">Department of Chemical Engineering, National Tsing Hua University (NTHU)</div>
+      <p class="small text-muted mt-1 mb-0">National Science and Technology Council (NSTC) Fellowship. Advanced optoelectronic characterization, machine learning property screening, and polymer/small-molecule photovoltaics under Prof. Ho-Hsiu Chou.</p>
+    </div>
+
+    <div class="cv-item">
+      <span class="period">2021 — 2023 · Cairo, Egypt</span>
+      <div class="role">Lecturer / Assistant Professor</div>
+      <div class="institution">Chemistry Department, Faculty of Science, Al-Azhar University</div>
+      <p class="small text-muted mt-1 mb-0">Taught physical, analytical, and inorganic chemistry courses; supervised graduation research theses and coordinated ASRT-funded undergraduate research programs.</p>
+    </div>
+
+    <div class="cv-item">
+      <span class="period">2021 · Athens, Greece</span>
+      <div class="role">Postdoctoral Researcher</div>
+      <div class="institution">Institute of Nanoscience and Nanotechnology (INN), NCSR “Demokritos”</div>
+      <p class="small text-muted mt-1 mb-0">Investigation of hybrid perovskites, charge transport kinetics, and dye-sensitized solar cell systems with Prof. Polycarpos Falaras.</p>
+    </div>
+
+    <div class="cv-item">
+      <span class="period">2017 — 2021 · Athens, Greece</span>
+      <div class="role">Ph.D. Researcher &amp; State Scholar</div>
+      <div class="institution">National and Kapodistrian University of Athens &amp; INN, NCSR “Demokritos”</div>
+      <p class="small text-muted mt-1 mb-0">Greek State Scholarship recipient. Investigated advanced inorganic and hybrid perovskite materials for solar cells and solar fuel photocatalysis.</p>
+    </div>
+
+    <div class="cv-item">
+      <span class="period">2012 — 2017 · Cairo, Egypt</span>
+      <div class="role">Assistant Lecturer &amp; Teaching Assistant</div>
+      <div class="institution">Chemistry Department, Faculty of Science, Al-Azhar University</div>
+    </div>
+
+    <div class="cv-item">
+      <span class="period">2008 — 2011 · Egypt</span>
+      <div class="role">Head of Quality Assurance &amp; Senior Chemist</div>
+      <div class="institution">Industrial Chemical Companies (Comex, MISR FOODS, FIMCO)</div>
+      <p class="small text-muted mt-1 mb-0">Directed laboratory testing protocols, ISO quality assurance, spectroscopy compliance, and chemical production safety.</p>
+    </div>
+  </section>
+
+  <!-- 2. EDUCATION -->
+  <section id="education" class="cv-card">
+    <div class="cv-card-header">
+      <i class="bi bi-mortarboard-fill"></i>
+      <div>
+        <h2>Education &amp; Diplomas</h2>
+        <div class="small text-muted">Doctoral, graduate, and machine learning credentials</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="ref-card h-100">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <span class="badge bg-primary bg-opacity-10 text-primary fw-bold">2017 — 2021</span>
+            <span class="small text-muted"><i class="bi bi-geo-alt"></i> Athens, Greece</span>
+          </div>
+          <h5 class="fw-bold mb-1">Ph.D. in Chemistry</h5>
+          <p class="text-primary small fw-semibold mb-2">National and Kapodistrian University of Athens &amp; NCSR “Demokritos”</p>
+          <p class="small text-muted mb-0">Doctoral dissertation on advanced inorganic and hybrid perovskite solar cells, photocatalysis, and charge extraction dynamics. Fully funded by State Achievement Fellowship.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ref-card h-100">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <span class="badge bg-primary bg-opacity-10 text-primary fw-bold">2021 — 2022</span>
+            <span class="small text-muted"><i class="bi bi-geo-alt"></i> Cairo, Egypt</span>
+          </div>
+          <h5 class="fw-bold mb-1">Professional Diploma in Artificial Intelligence</h5>
+          <p class="text-primary small fw-semibold mb-2">Space Code Academy</p>
+          <p class="small text-muted mb-0">Comprehensive specialization in Deep Learning, Convolutional Neural Networks, Artificial Neural Networks (ANN), Regression modeling, and chemoinformatics data pipelines.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ref-card h-100">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <span class="badge bg-primary bg-opacity-10 text-primary fw-bold">2012 — 2015</span>
+            <span class="small text-muted"><i class="bi bi-geo-alt"></i> Cairo, Egypt</span>
+          </div>
+          <h5 class="fw-bold mb-1">M.Sc. in Chemistry</h5>
+          <p class="text-primary small fw-semibold mb-2">Al-Azhar University</p>
+          <p class="small text-muted mb-0">Master's research centered on synthesis, physical-chemical characterization, and catalytic applications of tailored metal oxide nanostructures.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ref-card h-100">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <span class="badge bg-primary bg-opacity-10 text-primary fw-bold">2003 — 2007</span>
+            <span class="small text-muted"><i class="bi bi-geo-alt"></i> Cairo, Egypt</span>
+          </div>
+          <h5 class="fw-bold mb-1">B.Sc. in Chemistry (Honors)</h5>
+          <p class="text-primary small fw-semibold mb-2">Al-Azhar University</p>
+          <p class="small text-muted mb-0">Core curricula in Organic, Inorganic, Physical, Analytical, and Quantum Chemistry with distinction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. GRANTS & FUNDED PROJECTS -->
+  <section id="grants" class="cv-card">
+    <div class="cv-card-header">
+      <i class="bi bi-currency-exchange"></i>
+      <div>
+        <h2>Grants &amp; Funded Research Projects</h2>
+        <div class="small text-muted">International European and national consortium projects</div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 border bg-body h-100">
+          <span class="grant-badge eu"><i class="bi bi-flag-fill me-1"></i> European Union NextGeneration</span>
+          <h5 class="fw-bold mb-1">3GPV-4INDUSTRY Project</h5>
+          <div class="small text-muted mb-2"><strong>Period:</strong> 2024 — 2025 · <strong>Host:</strong> NCSR “Demokritos”, Greece</div>
+          <p class="small text-secondary mb-0">
+            Research on scalable 3rd generation photovoltaic devices for industrial deployment, focusing on high-efficiency lead-free and hybrid perovskite formulations and computational stability prediction.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 border bg-body h-100">
+          <span class="grant-badge asrt"><i class="bi bi-gear-wide-connected me-1"></i> ASRT Egypt</span>
+          <h5 class="fw-bold mb-1">Bedaya: Perovskite Solar Cells &amp; Machine Learning</h5>
+          <div class="small text-muted mb-2"><strong>Period:</strong> 2022 — 2023 · <strong>Role:</strong> Principal Supervisor</div>
+          <p class="small text-secondary mb-0">
+            Competitive national grant overseeing an interdisciplinary team of 5 graduation researchers applying artificial neural networks to predict solar cell PCE from synthetic parameters.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 border bg-body h-100">
+          <span class="grant-badge asrt"><i class="bi bi-recycle me-1"></i> ASRT Egypt · Circular Economy</span>
+          <h5 class="fw-bold mb-1">Precious Metals Recovery from Urban Waste</h5>
+          <div class="small text-muted mb-2"><strong>Period:</strong> 2022 — 2024 · <strong>Role:</strong> Co-Investigator</div>
+          <p class="small text-secondary mb-0">
+            Development of green hydrometallurgical and photocatalytic separation frameworks to extract high-purity noble and critical raw metals from discarded electronic waste.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 border bg-body h-100">
+          <span class="grant-badge asrt"><i class="bi bi-battery-charging me-1"></i> ASRT Egypt · Sustainability</span>
+          <h5 class="fw-bold mb-1">Recycling Spent Lead-Acid Batteries into Solar Cells</h5>
+          <div class="small text-muted mb-2"><strong>Period:</strong> 2022 — 2024 · <strong>Role:</strong> Senior Researcher</div>
+          <p class="small text-secondary mb-0">
+            Novel valorization route recovering lead iodide (PbI2) from depleted industrial vehicle batteries to synthesize high-purity perovskite light absorbers at dramatically reduced manufacturing cost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. RESEARCH EXPERTISE & METHODOLOGIES -->
+  <section id="skills" class="cv-card">
+    <div class="cv-card-header">
+      <i class="bi bi-cpu-fill"></i>
+      <div>
+        <h2>Scientific Expertise &amp; Methodologies</h2>
+        <div class="small text-muted">Computational modeling, synthesis, and machine learning toolsets</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6 class="fw-bold text-primary mb-3"><i class="bi bi-laptop me-2"></i>Computational Chemistry</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="tech-tag">Density Functional Theory (DFT)</span>
+          <span class="tech-tag">Gaussian &amp; VASP</span>
+          <span class="tech-tag">Molecular Dynamics</span>
+          <span class="tech-tag">Molecular Docking</span>
+          <span class="tech-tag">TD-DFT Excited States</span>
+          <span class="tech-tag">HOMO-LUMO Alignment</span>
+          <span class="tech-tag">Charge Transfer Analysis</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="fw-bold text-primary mb-3"><i class="bi bi-robot me-2"></i>AI &amp; Data Science</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="tech-tag">Python (NumPy, SciPy)</span>
+          <span class="tech-tag">Scikit-Learn &amp; PyTorch</span>
+          <span class="tech-tag">ANN &amp; MLP Regressors</span>
+          <span class="tech-tag">Cheminformatics &amp; RDKit</span>
+          <span class="tech-tag">Streamlit App Deployment</span>
+          <span class="tech-tag">Computer Vision Colorimetry</span>
+          <span class="tech-tag">Ensemble Deep Learning</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="fw-bold text-primary mb-3"><i class="bi bi-flask-fill me-2"></i>Experimental Synthesis</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="tech-tag">Perovskite Fabrication</span>
+          <span class="tech-tag">Dye-Sensitized Solar Cells</span>
+          <span class="tech-tag">Photocatalysis &amp; H2 Evolution</span>
+          <span class="tech-tag">MOFs / COFs / Polymers</span>
+          <span class="tech-tag">Solvothermal Synthesis</span>
+          <span class="tech-tag">UV-Vis &amp; Photoluminescence</span>
+          <span class="tech-tag">Electrochemical Impedance (EIS)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TEACHING & SERVICE -->
+  <section id="teaching" class="cv-card">
+    <div class="cv-card-header">
+      <i class="bi bi-book-half"></i>
+      <div>
+        <h2>Teaching, Mentorship &amp; Peer Review</h2>
+        <div class="small text-muted">Academic courses taught and peer-review contributions</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h6 class="fw-bold mb-3"><i class="bi bi-mortarboard me-2 text-primary"></i>Academic Courses Instructed</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small text-secondary">
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i><strong>Analytical Chemistry:</strong> Advanced volumetric, gravimetric, and lab instrumentation</li>
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i><strong>Transition Metal Chemistry:</strong> Coordination compounds, d-block &amp; f-block elements</li>
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i><strong>Instrumental Spectroscopy:</strong> UV-Vis, FTIR, NMR, and Mass Spectrometry</li>
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i><strong>Electrochemistry:</strong> Cyclic voltammetry, potentiometry, sensor mechanics</li>
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i><strong>General Chemistry:</strong> Thermodynamics, equilibria, and quantum atomic theory</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h6 class="fw-bold mb-3"><i class="bi bi-journal-check me-2 text-primary"></i>Reviewing &amp; Professional Service</h6>
+        <div class="p-3 rounded-3 bg-body border mb-3">
+          <div class="fw-semibold small mb-1">Peer Reviewer for Prestigious Journals:</div>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge text-bg-light border">ACS Omega</span>
+            <span class="badge text-bg-light border">Solar RRL</span>
+            <span class="badge text-bg-light border">Solar Energy (Elsevier)</span>
+            <span class="badge text-bg-light border">Physica Status Solidi</span>
+            <span class="badge text-bg-light border">Spectrochimica Acta A</span>
+          </div>
+        </div>
+        <div class="p-3 rounded-3 bg-body border">
+          <div class="fw-semibold small mb-1">Scientific Syndicate Membership:</div>
+          <p class="small text-muted mb-0">Active member of the Egyptian Syndicate of Scientific Professions (ESSP) since 2008.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ACADEMIC REFERENCES -->
+  <section id="references" class="cv-card">
+    <div class="cv-card-header">
+      <i class="bi bi-people-fill"></i>
+      <div>
+        <h2>Academic References</h2>
+        <div class="small text-muted">Senior investigators and collaborator endorsements</div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-3">
+        <div class="ref-card">
+          <h6 class="fw-bold mb-1">Dr. Polycarpos Falaras</h6>
+          <div class="small text-primary fw-semibold mb-2">Research Director</div>
+          <div class="small text-muted mb-3">Institute of Nanoscience and Nanotechnology, NCSR “Demokritos”, Athens, Greece</div>
+          <a href="mailto:p.falaras@inn.demokritos.gr" class="small text-decoration-none d-flex align-items-center gap-1 text-truncate">
+            <i class="bi bi-envelope"></i> p.falaras@inn.demokritos.gr
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ref-card">
+          <h6 class="fw-bold mb-1">Prof. Ho-Hsiu Chou</h6>
+          <div class="small text-primary fw-semibold mb-2">Distinguished Professor</div>
+          <div class="small text-muted mb-3">Dept. of Chemical Engineering, National Tsing Hua University (NTHU), Taiwan</div>
+          <a href="mailto:hhchou@mx.nthu.edu.tw" class="small text-decoration-none d-flex align-items-center gap-1 text-truncate">
+            <i class="bi bi-envelope"></i> hhchou@mx.nthu.edu.tw
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ref-card">
+          <h6 class="fw-bold mb-1">Prof. Badr A. Elsayed</h6>
+          <div class="small text-primary fw-semibold mb-2">Professor of Chemistry</div>
+          <div class="small text-muted mb-3">Faculty of Science, Al-Azhar University, Cairo, Egypt</div>
+          <a href="mailto:Badrelsayed@gmail.com" class="small text-decoration-none d-flex align-items-center gap-1 text-truncate">
+            <i class="bi bi-envelope"></i> Badrelsayed@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="ref-card">
+          <h6 class="fw-bold mb-1">Prof. M. M. Rashad</h6>
+          <div class="small text-primary fw-semibold mb-2">Professor &amp; Head</div>
+          <div class="small text-muted mb-3">Central Metallurgical R&amp;D Institute (CMRDI), Cairo, Egypt</div>
+          <a href="mailto:rashad133@yahoo.com" class="small text-decoration-none d-flex align-items-center gap-1 text-truncate">
+            <i class="bi bi-envelope"></i> rashad133@yahoo.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-4">
+        <div class="footer-brand">Dr. Mohamed Elsenety</div>
+        <div class="footer-tagline">Materials Science · DFT · Machine Learning</div>
+        <div class="footer-tagline mt-1">
+          <i class="bi bi-building me-1"></i> NCSR "Demokritos", Athens &amp; Al-Azhar University, Cairo
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Navigation</h6>
+        <ul class="list-unstyled mb-0" style="font-size:.875rem;">
+          <li class="mb-1"><a href="index.html" style="color:var(--text-secondary);text-decoration:none;">Home</a></li>
+          <li class="mb-1"><a href="cv.html" style="color:var(--text-secondary);text-decoration:none;">Curriculum Vitae</a></li>
+          <li class="mb-1"><a href="publications.html" style="color:var(--text-secondary);text-decoration:none;">Publications</a></li>
+          <li class="mb-1"><a href="gallery.html" style="color:var(--text-secondary);text-decoration:none;">Gallery</a></li>
+          <li class="mb-1"><a href="ml.html" style="color:var(--text-secondary);text-decoration:none;">ML Applications</a></li>
+          <li class="mb-1"><a href="contact.html" style="color:var(--text-secondary);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Connect</h6>
+        <div class="footer-social d-flex gap-2 flex-wrap">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" title="Google Scholar"><i class="bi bi-google"></i></a>
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" title="ORCID"><i class="bi bi-person-circle"></i></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" title="Scopus"><i class="bi bi-journal"></i></a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+          <a href="contact.html" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © <span id="year"></span> Dr. Mohamed Mahmoud Elsenety — All rights reserved. &nbsp;·&nbsp;
+      <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
 </body>

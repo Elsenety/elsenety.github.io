@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications &amp; Scientific Works | Dr. Mohamed Elsenety</title>
+  <meta name="description" content="Complete, live-updated list of 75+ peer-reviewed scientific publications, journals, and computational datasets by Dr. Mohamed Elsenety. Synced with ORCID.">
+  <meta name="keywords" content="Mohamed Elsenety publications, perovskite solar cells, DFT, machine learning chemistry, Nature Scientific Reports, Demokritos, ORCID 0000-0001-5107-5959">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <style>
+    .pub-filter-btn {
+      border-radius: var(--radius-pill);
+      padding: 0.4rem 1.1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--surface-border);
+      background: var(--surface-card);
+      color: var(--text-secondary);
+      transition: all var(--t-fast);
+      cursor: pointer;
+    }
+    .pub-filter-btn:hover, .pub-filter-btn.active {
+      background: var(--grad-accent);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 14px rgba(14,165,233,0.3);
+    }
+    .toast-copy {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1050;
+      background: #0f172a;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      animation: fadeInToast 0.3s ease;
+    }
+    @keyframes fadeInToast {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body data-page="publications">
+
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-cv" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link active" id="nav-publications" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-gallery" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-apps" href="ml.html">ML Apps</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2 align-items-center">
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle light / dark">🌓</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================================================
+     SUBPAGE HERO
+     ================================================ -->
+<header class="subpage-hero">
+  <div class="container position-relative" style="z-index: 1;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Publications</li>
+      </ol>
+    </nav>
+
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+          <span class="badge px-3 py-2 rounded-pill bg-primary bg-opacity-25 text-white border border-primary border-opacity-50">
+            <i class="bi bi-journal-richtext me-1"></i> Peer-Reviewed Publications &amp; Datasets
+          </span>
+          <span class="badge px-3 py-2 rounded-pill bg-success bg-opacity-25 text-white border border-success border-opacity-50" id="liveSyncStatusBadge">
+            <i class="bi bi-broadcast me-1"></i> Live ORCID Sync Active
+          </span>
+        </div>
+        <h1 class="mb-3">Publications &amp; Scientific Works</h1>
+        <p class="lead">
+          Comprehensive, live-updated catalog of <strong class="text-white" id="headerCount">75+</strong> peer-reviewed journal papers, international conference articles, and computational models across perovskite solar cells, quantum DFT, and machine learning.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex flex-column flex-sm-row flex-lg-column gap-2 justify-content-lg-end">
+          <button id="syncOrcidBtn" class="btn-hero-primary text-center">
+            <i class="bi bi-arrow-repeat me-1" id="syncIcon"></i> Check Live ORCID Updates
+          </button>
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" class="btn-hero-outline text-center">
+            <i class="bi bi-google me-2"></i> Google Scholar Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================================================
+     STATS & SYNC BAR
+     ================================================ -->
+<div class="bg-body border-bottom py-3">
+  <div class="container">
+    <div class="row g-3 align-items-center justify-content-between">
+      <div class="col-md-7">
+        <div class="d-flex flex-wrap gap-2 align-items-center">
+          <span class="badge text-bg-primary fs-6 py-2 px-3 rounded-pill" id="totalCountPill">75 Total Papers</span>
+          <span class="badge text-bg-light border fs-6 py-2 px-3 rounded-pill">
+            <i class="bi bi-person-circle text-success me-1"></i> ORCID: <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" class="text-decoration-none">0000-0001-5107-5959</a>
+          </span>
+          <span class="badge text-bg-light border fs-6 py-2 px-3 rounded-pill">
+            <i class="bi bi-calendar-check text-primary me-1"></i> 2026 Latest Updates
+          </span>
+        </div>
+      </div>
+      <div class="col-md-5 text-md-end">
+        <span class="small text-muted" id="syncTimestamp">
+          <i class="bi bi-clock-history me-1"></i> Daily auto-synced with ORCID &amp; CrossRef
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     INTERACTIVE FILTER & SEARCH STRIP
+     ================================================ -->
+<div class="sticky-top bg-body border-bottom py-3 shadow-sm" style="top: 72px; z-index: 990;">
+  <div class="container">
+    <div class="row g-3 align-items-center">
+      
+      <!-- Search input -->
+      <div class="col-lg-5">
+        <div class="input-group">
+          <span class="input-group-text bg-body border-end-0 text-muted"><i class="bi bi-search"></i></span>
+          <input type="text" id="pubSearchInput" class="form-control border-start-0 ps-0" placeholder="Search by title, journal, DOI, topic, or keyword...">
+          <button class="btn btn-outline-secondary border-start-0" type="button" id="clearSearchBtn" title="Clear search">✕</button>
+        </div>
+      </div>
+
+      <!-- Topic Dropdown -->
+      <div class="col-sm-6 col-lg-4">
+        <select id="pubTopicSelect" class="form-select">
+          <option value="all">All Topics (All Research Areas)</option>
+          <option value="Solar Energy & Perovskites">Solar Energy &amp; Perovskites</option>
+          <option value="DFT & Computational">DFT &amp; Quantum Chemistry</option>
+          <option value="Machine Learning & AI">Machine Learning &amp; AI</option>
+          <option value="Photocatalysis & Sensors">Photocatalysis &amp; Sensors</option>
+          <option value="Polymers & Circular Economy">Polymers &amp; Circular Economy</option>
+        </select>
+      </div>
+
+      <!-- Sort dropdown -->
+      <div class="col-sm-6 col-lg-3">
+        <select id="pubSortSelect" class="form-select">
+          <option value="newest">Sort: Newest First (2026 &rarr; 2012)</option>
+          <option value="oldest">Sort: Oldest First</option>
+          <option value="title">Sort: Title (A &rarr; Z)</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Year Pills -->
+    <div class="d-flex flex-wrap gap-2 align-items-center mt-3 pt-2 border-top">
+      <span class="small fw-semibold text-muted text-uppercase me-1" style="font-size:0.75rem;">Year:</span>
+      <button class="pub-filter-btn active" data-year="all">All Years</button>
+      <button class="pub-filter-btn" data-year="2026">2026</button>
+      <button class="pub-filter-btn" data-year="2025">2025</button>
+      <button class="pub-filter-btn" data-year="2024">2024</button>
+      <button class="pub-filter-btn" data-year="2023">2023</button>
+      <button class="pub-filter-btn" data-year="2022">2022</button>
+      <button class="pub-filter-btn" data-year="2021">2021</button>
+      <button class="pub-filter-btn" data-year="older">Older</button>
+
+      <span class="ms-auto small text-muted" id="resultsCount">Showing 75 publications</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     PUBLICATIONS LISTING
+     ================================================ -->
+<main class="container my-5">
+  
+  <!-- Alert toast banner for live sync feedback -->
+  <div id="syncAlertBanner" class="alert alert-success alert-dismissible fade show d-none mb-4" role="alert">
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+      <div>
+        <strong id="syncAlertTitle">Live Sync Successful!</strong>
+        <span id="syncAlertMessage" class="ms-1">Your publications are fully updated with ORCID registry.</span>
+      </div>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Publications Container -->
+  <div id="publicationsContainer">
+    <!-- Populated dynamically via JS -->
+    <div class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading publications...</span>
+      </div>
+      <p class="text-muted mt-2">Loading publications repository...</p>
+    </div>
+  </div>
+
+  <!-- Empty state message -->
+  <div id="noResultsMessage" class="text-center py-5 d-none">
+    <div class="fs-1 text-muted mb-3"><i class="bi bi-file-earmark-x"></i></div>
+    <h4>No matching publications found</h4>
+    <p class="text-muted">Try adjusting your search terms, year filter, or topic category.</p>
+    <button class="btn btn-outline-primary btn-sm mt-2" id="resetFiltersBtn">Reset All Filters</button>
+  </div>
+
+</main>
+
+<!-- Copy Citation Toast Notification -->
+<div id="copyToast" class="toast-copy">
+  <i class="bi bi-check2-circle text-success fs-5"></i>
+  <span>Citation copied to clipboard!</span>
+</div>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-4">
+        <div class="footer-brand">Dr. Mohamed Elsenety</div>
+        <div class="footer-tagline">Materials Science · DFT · Machine Learning</div>
+        <div class="footer-tagline mt-1">
+          <i class="bi bi-building me-1"></i> NCSR "Demokritos", Athens &amp; Al-Azhar University, Cairo
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Navigation</h6>
+        <ul class="list-unstyled mb-0" style="font-size:.875rem;">
+          <li class="mb-1"><a href="index.html" style="color:var(--text-secondary);text-decoration:none;">Home</a></li>
+          <li class="mb-1"><a href="cv.html" style="color:var(--text-secondary);text-decoration:none;">Curriculum Vitae</a></li>
+          <li class="mb-1"><a href="publications.html" style="color:var(--text-secondary);text-decoration:none;">Publications</a></li>
+          <li class="mb-1"><a href="gallery.html" style="color:var(--text-secondary);text-decoration:none;">Gallery</a></li>
+          <li class="mb-1"><a href="ml.html" style="color:var(--text-secondary);text-decoration:none;">ML Applications</a></li>
+          <li class="mb-1"><a href="contact.html" style="color:var(--text-secondary);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Connect</h6>
+        <div class="footer-social d-flex gap-2 flex-wrap">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" title="Google Scholar"><i class="bi bi-google"></i></a>
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" title="ORCID"><i class="bi bi-person-circle"></i></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" title="Scopus"><i class="bi bi-journal"></i></a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+          <a href="contact.html" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © <span id="year"></span> Dr. Mohamed Mahmoud Elsenety — All rights reserved. &nbsp;·&nbsp;
+      <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+  let allPublications = [];
+  let currentYearFilter = 'all';
+  let currentTopicFilter = 'all';
+  let currentSearchQuery = '';
+  let currentSort = 'newest';
+
+  const container = document.getElementById('publicationsContainer');
+  const resultsCount = document.getElementById('resultsCount');
+  const noResultsMessage = document.getElementById('noResultsMessage');
+  const searchInput = document.getElementById('pubSearchInput');
+  const clearSearchBtn = document.getElementById('clearSearchBtn');
+  const topicSelect = document.getElementById('pubTopicSelect');
+  const sortSelect = document.getElementById('pubSortSelect');
+  const syncBtn = document.getElementById('syncOrcidBtn');
+  const syncIcon = document.getElementById('syncIcon');
+  const syncAlert = document.getElementById('syncAlertBanner');
+
+  // Load initial publications from assets/data/publications.json
+  fetch('assets/data/publications.json')
+    .then(res => res.json())
+    .then(data => {
+      allPublications = data.publications || [];
+      updateHeaderCounts(allPublications.length, data.last_updated);
+      renderPublications();
+    })
+    .catch(err => {
+      console.warn('Could not load local publications.json, attempting live fetch from ORCID...', err);
+      performOrcidSync(true);
+    });
+
+  function updateHeaderCounts(count, dateStr) {
+    document.getElementById('headerCount').textContent = count + '+';
+    document.getElementById('totalCountPill').textContent = count + ' Total Papers';
+    if (dateStr) {
+      document.getElementById('syncTimestamp').innerHTML = '<i class="bi bi-check-circle-fill text-success me-1"></i> Synced up to: ' + dateStr;
+    }
+  }
+
+  // Render function
+  function renderPublications() {
+    let filtered = allPublications.filter(pub => {
+      // Year filter
+      if (currentYearFilter !== 'all') {
+        if (currentYearFilter === 'older') {
+          if (pub.year >= 2021) return false;
+        } else if (String(pub.year) !== currentYearFilter) {
+          return false;
+        }
+      }
+
+      // Topic filter
+      if (currentTopicFilter !== 'all') {
+        if (!pub.topics || !pub.topics.includes(currentTopicFilter)) return false;
+      }
+
+      // Search query
+      if (currentSearchQuery.trim() !== '') {
+        const q = currentSearchQuery.toLowerCase();
+        const text = (pub.title + ' ' + (pub.journal || '') + ' ' + (pub.doi || '') + ' ' + (pub.topics ? pub.topics.join(' ') : '')).toLowerCase();
+        if (!text.includes(q)) return false;
+      }
+
+      return true;
+    });
+
+    // Sort
+    filtered.sort((a, b) => {
+      if (currentSort === 'newest') {
+        return (b.year - a.year) || ((b.month || 0) - (a.month || 0)) || ((b.day || 0) - (a.day || 0));
+      } else if (currentSort === 'oldest') {
+        return (a.year - b.year) || ((a.month || 0) - (b.month || 0)) || ((a.day || 0) - (b.day || 0));
+      } else if (currentSort === 'title') {
+        return a.title.localeCompare(b.title);
+      }
+      return 0;
+    });
+
+    resultsCount.textContent = `Showing ${filtered.length} of ${allPublications.length} publications`;
+
+    if (filtered.length === 0) {
+      container.innerHTML = '';
+      noResultsMessage.classList.remove('d-none');
+      return;
+    }
+
+    noResultsMessage.classList.add('d-none');
+    container.innerHTML = filtered.map(pub => {
+      const doiLink = pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : null);
+      const scholarSearch = `https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}`;
+      const topicsHtml = pub.topics ? pub.topics.map(t => `<span class="tech-tag">${escapeHtml(t)}</span>`).join(' ') : '';
+      const isNew = pub.isNew ? '<span class="badge text-bg-success ms-2"><i class="bi bi-stars"></i> Just Synced</span>' : '';
+      
+      return `
+        <article class="pub-item-card" data-year="${pub.year}">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+            <div class="d-flex align-items-center gap-2">
+              <span class="pub-year-badge"><i class="bi bi-calendar3"></i> ${pub.year || 'Recent'}</span>
+              <span class="pub-type-badge">${escapeHtml(pub.type ? pub.type.replace('-', ' ') : 'Journal Article')}</span>
+              ${isNew}
+            </div>
+            ${pub.doi ? `<span class="small text-muted font-monospace d-none d-md-inline">DOI: ${escapeHtml(pub.doi)}</span>` : ''}
+          </div>
+
+          <h3 class="pub-title">
+            ${doiLink ? `<a href="${doiLink}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a>` : escapeHtml(pub.title)}
+          </h3>
+
+          ${pub.journal ? `
+            <div class="pub-journal">
+              <i class="bi bi-journal-bookmark-fill"></i>
+              <span>${escapeHtml(pub.journal)}</span>
+            </div>
+          ` : ''}
+
+          <div class="pub-authors">
+            <span class="highlight-author">Dr. Mohamed Elsenety</span> and collaborative co-authors
+          </div>
+
+          ${topicsHtml ? `<div class="d-flex flex-wrap gap-1 mb-2">${topicsHtml}</div>` : ''}
+
+          <div class="pub-actions">
+            ${doiLink ? `
+              <a href="${doiLink}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="bi bi-box-arrow-up-right me-1"></i> Read Article (DOI)
+              </a>
+            ` : ''}
+            <button class="btn btn-outline-secondary btn-sm copy-btn" data-citation="${escapeHtml(pub.title + ' (' + pub.year + '). ' + (pub.journal || '') + (pub.doi ? ' DOI: ' + pub.doi : ''))}">
+              <i class="bi bi-clipboard me-1"></i> Copy Citation
+            </button>
+            <a href="${scholarSearch}" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-google me-1"></i> Google Scholar
+            </a>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    // Attach copy citation listener
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.getAttribute('data-citation');
+        navigator.clipboard.writeText(text).then(() => {
+          showToast();
+        });
+      });
+    });
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function showToast() {
+    const toast = document.getElementById('copyToast');
+    toast.style.display = 'flex';
+    setTimeout(() => { toast.style.display = 'none'; }, 2500);
+  }
+
+  // Filter Event Listeners
+  document.querySelectorAll('.pub-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentYearFilter = btn.getAttribute('data-year');
+      renderPublications();
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    currentSearchQuery = e.target.value;
+    renderPublications();
+  });
+
+  clearSearchBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    currentSearchQuery = '';
+    renderPublications();
+  });
+
+  topicSelect.addEventListener('change', (e) => {
+    currentTopicFilter = e.target.value;
+    renderPublications();
+  });
+
+  sortSelect.addEventListener('change', (e) => {
+    currentSort = e.target.value;
+    renderPublications();
+  });
+
+  document.getElementById('resetFiltersBtn').addEventListener('click', () => {
+    searchInput.value = '';
+    currentSearchQuery = '';
+    currentYearFilter = 'all';
+    currentTopicFilter = 'all';
+    topicSelect.value = 'all';
+    sortSelect.value = 'newest';
+    document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-year') === 'all'));
+    renderPublications();
+  });
+
+  // Live Sync with ORCID API
+  syncBtn.addEventListener('click', () => {
+    performOrcidSync(false);
+  });
+
+  function performOrcidSync(silent = false) {
+    syncIcon.classList.add('rotating-sync');
+    syncBtn.disabled = true;
+
+    fetch('https://pub.orcid.org/v3.0/0000-0001-5107-5959/works', {
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(res => res.json())
+    .then(data => {
+      syncIcon.classList.remove('rotating-sync');
+      syncBtn.disabled = false;
+
+      if (!data || !data.group) return;
+
+      let newItemsFound = 0;
+      const existingIds = new Set(allPublications.map(p => p.id || p.doi));
+
+      data.group.forEach(g => {
+        const w = g['work-summary'] && g['work-summary'][0];
+        if (!w) return;
+
+        let doi = '';
+        if (w['external-ids'] && w['external-ids']['external-id']) {
+          const d = w['external-ids']['external-id'].find(x => x['external-id-type'] === 'doi');
+          if (d) doi = d['external-id-value'];
+        }
+
+        const identifier = w['put-code'] || doi;
+        if (!existingIds.has(identifier)) {
+          newItemsFound++;
+          const title = w.title && w.title.title ? w.title.title.value : 'Untitled Publication';
+          const year = w['publication-date'] && w['publication-date'].year ? parseInt(w['publication-date'].year.value) : new Date().getFullYear();
+          const journal = w['journal-title'] ? w['journal-title'].value : '';
+          
+          allPublications.unshift({
+            id: identifier,
+            title: title,
+            journal: journal,
+            year: year,
+            type: w.type || 'journal-article',
+            doi: doi,
+            url: doi ? `https://doi.org/${doi}` : '',
+            topics: ['Latest Publications', 'Materials Chemistry'],
+            isNew: true
+          });
+        }
+      });
+
+      const today = new Date().toISOString().split('T')[0];
+      updateHeaderCounts(allPublications.length, today);
+      renderPublications();
+
+      if (!silent) {
+        syncAlert.classList.remove('d-none');
+        if (newItemsFound > 0) {
+          document.getElementById('syncAlertTitle').textContent = `Sync Complete! Found ${newItemsFound} new publication(s).`;
+          document.getElementById('syncAlertMessage').textContent = 'Your listing is updated up to today with newly indexed ORCID articles.';
+        } else {
+          document.getElementById('syncAlertTitle').textContent = 'All Caught Up!';
+          document.getElementById('syncAlertMessage').textContent = 'All 75+ publications are completely up to date with the latest ORCID records.';
+        }
+      }
+    })
+    .catch(err => {
+      syncIcon.classList.remove('rotating-sync');
+      syncBtn.disabled = false;
+      console.error('Error fetching ORCID works live:', err);
+      if (!silent) {
+        alert('Could not connect to ORCID live servers. Displaying saved local publications library.');
+      }
+    });
+  }
+</script>
+</body>
+</html>

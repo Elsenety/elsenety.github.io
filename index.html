@@ -1,497 +1,659 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Dr. Mohamed Elsenety</title>
-    <meta name="description" content="Academic profile of Your Name: CV, publications, gallery, and ML apps.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/favicon.png">
-    
-        <style>
-      .pub-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 100%;
-      }
-      .pub-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-      }
-      .pub-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-      }
-      .modal-image {
-        width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-      }
-      .pub-badge {
-        font-size: 0.8rem;
-      }
-      .social-links a {
-        text-decoration: none;
-        transition: opacity 0.2s;
-      }
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-      .google-scholar-icon {
-        color: #4285F4;
-      }
-      .orcid-icon {
-        color: #A6CE39;
-      }
-      .scopus-icon {
-        color: #E9710E;
-      }
-      .researchgate-icon {
-        color: #00CCBB;
-      }
-    </style>
-    
-    
-    
-  </head>
-  <body data-page="home">
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Mohamed Elsenety | Materials Scientist & Computational Chemist</title>
+  <meta name="description" content="Academic portfolio of Dr. Mohamed Elsenety — Researcher at NCSR Demokritos, Athens. Expert in perovskites, DFT, machine learning for materials, photocatalysis, and solar energy.">
+  <meta name="keywords" content="Mohamed Elsenety, materials science, DFT, perovskite solar cells, machine learning, photocatalysis, computational chemistry, Al-Azhar University">
+  <meta property="og:title" content="Dr. Mohamed Elsenety | Materials Scientist">
+  <meta property="og:description" content="Bridging experiment, computation, and AI for next-generation functional materials.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body data-page="home">
+
+<!-- Top Reading Progress Bar -->
+<div id="readingProgressBar"></div>
+
+<!-- ================================================
+     NAVBAR
+     ================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Dr. Mohamed Elsenety</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample" aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample">
+    <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" id="nav-home" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-cv" href="cv.html">CV</a></li>
-        <!--<li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>-->
+        <li class="nav-item"><a class="nav-link" id="nav-publications" href="publications.html">Publications</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-gallery" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-apps" href="ml.html">ML Apps</a></li>
         <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
       </ul>
       <div class="d-flex gap-2 align-items-center">
-        <!--<a class="btn btn-outline-primary btn-sm" href="assets/pdf/YourName_CV.pdf" download>Download CV</a>-->
-        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" title="Toggle light / dark">🌓</button>
       </div>
     </div>
   </div>
 </nav>
-<header class="hero py-5">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-md-4 text-center">
-        <img src="assets/img/profile.jpg" class="rounded-4 img-fluid shadow-sm" alt="Your portrait">
-      </div>
-      <div class="col-md-8">
-        <h1 class="display-5 fw-bold">Dr. Mohamed Elsenety</h1>
-        <p class="lead">Scientist & Lecturer | Chemistry • Material science • Machine Learning for Materials</p>
-        <p>I build data-driven tools for chemistry and environmental remediation, combining <strong>ML/DL</strong> with <strong>DFT</strong> and experiments. My work spans solar photocatalysis, perovskites, and intelligent sensing.</p>
 
-                <span class="social-links">
-          <a href="" class="me-3" target="_blank" title="Google Scholar">
-            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
+<!-- ================================================
+     HERO WITH INTERACTIVE MOLECULAR CANVAS
+     ================================================ -->
+<header class="hero">
+  <!-- Interactive Particle Network Canvas -->
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+  <div class="container hero-content">
+    <div class="row align-items-center g-5">
+
+      <!-- Avatar with Dynamic Glow Aura & Floating Badges -->
+      <div class="col-md-4 text-center" data-animate="zoom-in">
+        <div class="hero-avatar mx-auto position-relative" style="width:fit-content;">
+          <div class="hero-avatar-glow"></div>
+          <img src="assets/img/profile.jpg" alt="Portrait of Dr. Mohamed Elsenety">
+          
+          <!-- Orbiting Floating Badges -->
+          <div class="hero-badge badge-floating-1">
+            <i class="bi bi-patch-check-fill text-warning"></i>
+            <span>75+ Publications</span>
+          </div>
+          <div class="hero-badge badge-floating-2">
+            <i class="bi bi-cpu-fill text-info"></i>
+            <span>DFT &amp; AI Chemist</span>
+          </div>
+          <div class="hero-badge badge-floating-3">
+            <i class="bi bi-sun-fill text-warning"></i>
+            <span>Perovskite PVs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text & Interactive Typewriter -->
+      <div class="col-md-8" data-animate="fade-right">
+        <p class="lead-title mb-2">Researcher · Lecturer · Innovator</p>
+        <h1 class="mb-2">Dr. Mohamed<br>Elsenety</h1>
+        
+        <!-- Animated Multi-Phrase Typewriter -->
+        <div class="typewriter-headline mb-3">
+          <span>Pioneering </span>
+          <span id="heroTypewriter" class="typewriter-dynamic"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+
+        <p class="hero-bio mb-4">
+          I bridge <strong style="color:var(--clr-accent-light)">experimental synthesis</strong>, <strong style="color:var(--clr-teal)">computational DFT</strong>, and <strong style="color:var(--clr-primary)">machine learning</strong> to engineer next-generation functional materials — from perovskite solar cells to intelligent chemical sensors.
+        </p>
+
+        <!-- Social chips -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" class="social-chip">
+            <i class="bi bi-google icon"></i> Google Scholar
           </a>
-          <a href="" class="me-3" target="_blank" title="ORCID">
-            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" class="social-chip">
+            <i class="bi bi-person-circle icon"></i> ORCID
           </a>
-          <a href="" class="me-3" target="_blank" title="Scopus">
-            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" class="social-chip">
+            <i class="bi bi-journal icon"></i> Scopus
           </a>
-          <a href="" target="_blank" title="ResearchGate">
-            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" class="social-chip">
+            <i class="bi bi-mortarboard icon"></i> ResearchGate
           </a>
-        </span>
-                <div class="d-flex gap-2 mt-3">
-          <a href="cv.html" class="btn btn-primary">View CV</a>
-          <!--<a href="https://orcid.org/0000-0001-5107-5959"  target="_blank" class="btn btn-outline-primary">Publications</a>-->
-          <a href="ml.html" class="btn btn-outline-secondary">ML Apps</a>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="d-flex flex-wrap gap-3">
+          <a href="publications.html" class="btn-hero-primary">
+            <i class="bi bi-journal-richtext me-2"></i>Publications (75+)
+          </a>
+          <a href="cv.html" class="btn-hero-outline">
+            <i class="bi bi-file-earmark-person me-2"></i>View CV
+          </a>
+          <a href="ml.html" class="btn-hero-outline">
+            <i class="bi bi-cpu me-2"></i>Explore ML Apps
+          </a>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M7 10l5 5 5-5"/>
+    </svg>
   </div>
 </header>
 
-<!--
-<section class="container my-5">
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Research Interests</h5>
-          <p class="card-text">
-            Materials science, organic/inorganic synthesis, solid-state and solution-phase chemistry, crystal structure analysis, Rietveld refinement, DFT calculations (Material Studio, Gaussian, Quantum ESPRESSO), molecular docking (MOE), and advanced characterization (XRD, IR, NMR, mass spectrometry, TGA/DTA/DSC, SEM/AFM/TEM, XPS, PL). Applications include perovskite & DSSCs, chemical and biosensors, photocatalysis, wastewater treatment, and AI-driven materials discovery.
-          </p>
-          <a href="cv.html#research" class="stretched-link">Learn more</a>
-        </div>
+<!-- ================================================
+     STATS STRIP WITH 3D TILT & LIVE METRICS
+     ================================================ -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="row g-0 justify-content-center">
+      <div class="col-6 col-md-3 stat-item tilt-card" data-animate="fade-up">
+        <div class="stat-number" data-count="75">0</div>
+        <div class="stat-label">Publications (ORCID)</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item tilt-card" data-animate="fade-up" style="transition-delay:0.1s">
+        <div class="stat-number" data-count="1000">0</div>
+        <div class="stat-label">Citations</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item tilt-card" data-animate="fade-up" style="transition-delay:0.2s">
+        <div class="stat-number" data-count="15">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item tilt-card" data-animate="fade-up" style="transition-delay:0.3s">
+        <div class="stat-number" data-count="4">0</div>
+        <div class="stat-label">Research Grants</div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Recent Publications</h5>
-          <ul class="list-unstyled small mb-0">
-            <li>• Elsenety et al., <em>Dyes and Pigments</em>, 2025.</li>
-            <li>• Elsenety et al., <em>Chemical Engineering Journal</em>, 2024.</li>
-            <li>• Elsenety et al., <em>Applied Materials Today</em>, 2023.</li>
-          </ul>
-          <a href="publications.html" class="stretched-link">View all</a>
+  </div>
+</section>
+
+<!-- ================================================
+     BIOGRAPHY
+     ================================================ -->
+<section class="section-wrapper" id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5" data-animate="fade-right">
+        <div class="section-label">About Me</div>
+        <h2 class="section-heading">Scientist, <span>Educator</span> &amp; Innovator</h2>
+        <div class="section-divider"></div>
+        <p style="color:var(--text-secondary); line-height:1.85;">
+          Currently a <strong>Researcher</strong> at the Institute of Nanoscience and Nanotechnology (INN), NCSR "Demokritos," Athens — and a faculty member at <strong>Al-Azhar University, Cairo</strong>.
+        </p>
+        <p style="color:var(--text-secondary); line-height:1.85;">
+          My interdisciplinary approach fuses solid-state synthesis, crystal structure determination, high-level DFT calculations, and AI-driven discovery to address global challenges in clean energy and environmental remediation.
+        </p>
+        <div class="highlight-box mt-4">
+          <i class="bi bi-geo-alt-fill me-2" style="color:var(--clr-primary)"></i>
+          Athens, Greece &amp; Cairo, Egypt
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Featured ML Application</h5>
-          <p class="card-text">
-            SmartpH — a universal pH estimation tool using artificial neural networks and colorimetric image analysis, integrating multi-source color data for accurate predictions.
+
+      <div class="col-lg-7" data-animate="fade-left">
+        <div class="bio-card">
+          <p>
+            Dr. Mohamed Mahmoud Elsenety is a chemist and materials scientist whose work spans the full chain from <em>molecule to device</em>. He holds a Ph.D. from the National and Kapodistrian University of Athens and has held postdoctoral positions in Greece and Taiwan (NTHU).
           </p>
-          <a href="apps.html#smartph" class="stretched-link">Try it</a>
+          <p>
+            His research integrates experimental and theoretical approaches — solid-state and solution-phase synthesis, crystal structure determination, Rietveld analysis, DFT calculations using CASTEP, Gaussian, and Quantum ESPRESSO, molecular docking via MOE, and advanced characterization (XRD, IR, NMR, mass spectrometry, TGA/DTA/DSC, SEM, AFM, TEM, XPS, PL spectroscopy).
+          </p>
+          <p>
+            He also employs artificial intelligence, machine learning, and deep learning to guide the design and optimization of functional materials, bridging computational modeling with real-world applications in solar energy, sensing, and water purification.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
--->
 
-    
-    
-<section class="container my-5">
-<h2 class="mb-4">Biography</h2>
-<p>
-Dr. Mohamed Mahmoud Elsenety is a Lecturer in the Chemistry Department at Al-Azhar University, Cairo, specializing in materials science, innic and nic synthesis, and computational chemistry. His research integrates experimental and theoretical approaches, including solid-state and solution-phase synthesis, crystal structure determination, Rietveld analysis, DFT calculations using Material Studio, Gaussian, and Quantum ESPRESSO, molecular docking via MOE, and advanced material characterization techniques such as XRD, IR, NMR, mass spectrometry, TGA/DTA/DSC, SEM, AFM, TEM, XPS, and photoluminescence spectroscopy.  
-</p>
-<p>
-Dr. Elsenety focuses on applications in energy conversion, sensing, and environmental remediation, including perovskite and dye-sensitized solar cells, chemical and biosensors, and photocatalytic water treatment. He also employs artificial intelligence, machine learning, and deep learning to guide the design and optimization of functional materials. His interdisciplinary approach bridges synthesis, characterization, and computational modeling to advance next-generation materials for sustainable technologies.
-</p>
+<!-- ================================================
+     RESEARCH AREAS (Infographic Cards)
+     ================================================ -->
+<section class="section-wrapper alt-bg" id="research">
+  <div class="container">
+    <div class="text-center mb-5" data-animate="fade-up">
+      <div class="section-label" style="justify-content:center;">Research Focus</div>
+      <h2 class="section-heading">Areas of <span>Expertise</span></h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <div class="row g-4" data-stagger>
+      <!-- Card 1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="research-card">
+          <div class="research-icon" style="background:rgba(14,165,233,0.12);">☀️</div>
+          <h5>Perovskite &amp; DSSCs</h5>
+          <p>Design and fabrication of high-efficiency perovskite and dye-sensitized solar cells for next-generation photovoltaics.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="research-card">
+          <div class="research-icon" style="background:rgba(124,58,237,0.12);">⚛️</div>
+          <h5>Computational DFT &amp; MD</h5>
+          <p>Density functional theory and molecular dynamics simulations using CASTEP, Gaussian, and Quantum ESPRESSO on Linux/Windows.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="research-card">
+          <div class="research-icon" style="background:rgba(16,185,129,0.12);">🤖</div>
+          <h5>AI &amp; Machine Learning</h5>
+          <p>Neural networks and deep learning for property prediction, materials discovery acceleration, and intelligent chemical sensors.</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="research-card">
+          <div class="research-icon" style="background:rgba(245,158,11,0.12);">💧</div>
+          <h5>Photocatalysis &amp; Water Treatment</h5>
+          <p>Nanostructured catalysts for solar-driven hydrogen evolution and degradation of organic pollutants in wastewater.</p>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="research-card">
+          <div class="research-icon" style="background:rgba(244,63,94,0.12);">🔬</div>
+          <h5>Advanced Characterization</h5>
+          <p>XRD, Raman, FTIR, NMR, SEM/TEM/AFM, XPS, PL, TRPL, CV, EIS, TGA/DTA/DSC — from nanoscale to bulk materials.</p>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="research-card">
+          <div class="research-icon" style="background:rgba(20,184,166,0.12);">🧪</div>
+          <h5>Synthesis &amp; Crystallography</h5>
+          <p>Organic/inorganic synthesis, MOFs, COFs, polymers. Crystal structure solving and Rietveld analysis for 0D–3D materials.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-    
-    
-    
-    
- <section class="container my-5">
-      <div class="d-flex align-items-center justify-content-between mb-4">
-        <h1 class="mb-0">Research Activity</h1>
-        <div class="input-group w-auto">
-          <!--<span class="input-group-text">Some Selected Paper...</span>-->
-          <!--<span  href="https://www.nature.com/articles/s41598-022-27054-5" target="_blank" class="input-group-text">See more</span>-->
-          
-                <a href="https://scholar.google.com/citations?hl=fil&user=fvLZ67wAAAAJ&view_op=list_works&sortby=pubdate" class="btn btn-sm btn-outline-primary">See all publications...</a>
-                         
-          
-                
-              
-          
-          <!--
-          <select id="pubFilter" class="form-select">
-            <option value="all" selected>All</option>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-          </select>
-          -->
+<!-- ================================================
+     KEYWORD BUBBLE INFOGRAPHIC
+     ================================================ -->
+<section class="section-wrapper" id="keywords">
+  <div class="container">
+    <div class="text-center mb-4" data-animate="fade-up">
+      <div class="section-label" style="justify-content:center;">Research Keywords</div>
+      <h2 class="section-heading">What I <span>Work On</span></h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="bubble-chart" data-animate="zoom-in">
+      <span class="bubble bubble-blue">⚡ Perovskite Solar Cells</span>
+      <span class="bubble bubble-violet">🧠 Machine Learning</span>
+      <span class="bubble bubble-teal">🌊 Photocatalysis</span>
+      <span class="bubble bubble-amber">🔭 XRD / Crystallography</span>
+      <span class="bubble bubble-rose">🔥 DFT Calculations</span>
+      <span class="bubble bubble-emerald">🧬 MOFs &amp; COFs</span>
+      <span class="bubble bubble-blue">💡 DSSCs</span>
+      <span class="bubble bubble-violet">🤖 Deep Learning</span>
+      <span class="bubble bubble-teal">🧪 Nanostructures</span>
+      <span class="bubble bubble-amber">📊 Rietveld Analysis</span>
+      <span class="bubble bubble-rose">🛢️ Wastewater Treatment</span>
+      <span class="bubble bubble-emerald">📡 Optical Sensors</span>
+      <span class="bubble bubble-blue">⚗️ Quantum ESPRESSO</span>
+      <span class="bubble bubble-violet">🔮 Molecular Docking</span>
+      <span class="bubble bubble-teal">🌡️ TGA / DSC / DTA</span>
+      <span class="bubble bubble-amber">🔬 SEM / TEM / AFM</span>
+      <span class="bubble bubble-rose">💻 CASTEP / Gaussian</span>
+      <span class="bubble bubble-emerald">⚙️ XPS / UPS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     SKILLS INFOGRAPHIC
+     ================================================ -->
+<section class="section-wrapper alt-bg" id="skills">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5" data-animate="fade-right">
+        <div class="section-label">Technical Skills</div>
+        <h2 class="section-heading">Core <span>Competencies</span></h2>
+        <div class="section-divider"></div>
+        <p style="color:var(--text-secondary);">
+          A balanced researcher equally comfortable at the synthesis bench, the characterization suite, and the computational workstation — with strong data science skills applied throughout.
+        </p>
+        <div class="highlight-box mt-4">
+          <i class="bi bi-award-fill me-2" style="color:var(--clr-amber)"></i>
+          <strong>Diploma in AI</strong> — Machine Learning &amp; Deep Learning, Space Code Academy, Cairo (2021–2022)
         </div>
       </div>
 
-      <div class="row g-4" id="publications-container">
-        <!-- Publication 1 -->
-        <div class="col-md-6 col-lg-4" data-year="2024">
-          <div class="card pub-card h-100 shadow-sm">
-            <img src="assets/img/publications/pub4.jpg" class="pub-image card-img-top" alt="Publication Title" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/img/publications/pub1.jpg">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Synthesis & Characterization</h5>
-              <p class="card-text">Orgainc/ Inorganic compounds, Complexes, MOFs, COFs, Polymers. 
-</p>
-                       <p class="card-text">              XRD, Raman, FTIR, NMR, Mass, UV, PL, TRPL, AFM, TGA, DTA, DSC, SEM, EDAX, TEM, SEAD, XPS, UPS, GC-MS, HPLC, IPCE, CV, EIS…. etc.), and Statistical Analysis </p>
-
-              <!--
-              <div class="mt-auto">
-                <span class="badge bg-primary pub-badge">Journal Article</span>
-                <span class="badge bg-secondary pub-badge">2024</span>
-              </div>
-              -->
-            </div>
-            <div class="card-footer bg-transparent">
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
-                <!--
-                <div>
-                  <a href="#" class="text-decoration-none me-2" title="DOI">
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                  <a href="#" class="text-decoration-none" title="PDF">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </a>
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
+      <div class="col-lg-7" data-animate="fade-left">
+        <!-- Experimental -->
+        <h6 class="fw-bold mb-3" style="color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;font-size:.75rem;">Experimental</h6>
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">Material Synthesis (Organic / Inorganic / Hybrid)</span><span class="skill-pct">95%</span></div>
+          <div class="skill-track"><div class="skill-fill teal" data-width="95"></div></div>
         </div>
-        
-        
-        
-                <!-- Publication 1 -->
-        <div class="col-md-6 col-lg-4" data-year="2024">
-          <div class="card pub-card h-100 shadow-sm">
-            <img src="assets/img/publications/pub5.jpg" class="pub-image card-img-top" alt="Publication Title" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/img/publications/pub1.jpg">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Crystallography & Solving crystal system </h5>
-              <p class="card-text">Solving crystal system & Rietveld analysis (SXRD /PXRD), for 0D, 1D, 2D, 3D materials.
-</p>
-              <!--
-              <div class="mt-auto">
-                <span class="badge bg-primary pub-badge">Journal Article</span>
-                <span class="badge bg-secondary pub-badge">2024</span>
-              </div>
-              -->
-            </div>
-            <div class="card-footer bg-transparent">
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
-                <!--
-                <div>
-                  <a href="#" class="text-decoration-none me-2" title="DOI">
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                  <a href="#" class="text-decoration-none" title="PDF">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </a>
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">Advanced Characterization (XRD, SEM, XPS, PL…)</span><span class="skill-pct">92%</span></div>
+          <div class="skill-track"><div class="skill-fill teal" data-width="92"></div></div>
         </div>
-        
-        
-                <!-- Publication 1 -->
-        <div class="col-md-6 col-lg-4" data-year="2024">
-          <div class="card pub-card h-100 shadow-sm">
-            <img src="assets/img/publications/pub6.jpg" class="pub-image card-img-top" alt="Publication Title" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/img/publications/pub1.jpg">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Computational DFT & MD
-</h5>
-              <p class="card-text">DFT calculations, Molecular dynamic interaction (CASTEP, Gaussian, Quantum expresso, ... etc.) whatever windows and Linux OS.
-</p>
-              <!--
-              <div class="mt-auto">
-                <span class="badge bg-primary pub-badge">Journal Article</span>
-                <span class="badge bg-secondary pub-badge">2024</span>
-              </div>
-              -->
-            </div>
-            <div class="card-footer bg-transparent">
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
-                <!--
-                <div>
-                  <a href="#" class="text-decoration-none me-2" title="DOI">
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                  <a href="#" class="text-decoration-none" title="PDF">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </a>
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-                <!-- Publication 1 -->
-        <div class="col-md-6 col-lg-4" data-year="2024">
-          <div class="card pub-card h-100 shadow-sm">
-            <img src="assets/img/publications/pub1.jpg" class="pub-image card-img-top" alt="Publication Title" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/img/publications/pub1.jpg">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Advanced Materials for Photovoltaic Applications</h5>
-              <p class="card-text">This study explores novel materials for enhancing solar cell efficiency through nanotechnology approaches.</p>
-              <!--
-              <div class="mt-auto">
-                <span class="badge bg-primary pub-badge">Journal Article</span>
-                <span class="badge bg-secondary pub-badge">2024</span>
-              </div>
-              -->
-            </div>
-            <div class="card-footer bg-transparent">
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
-                <!--
-                <div>
-                  <a href="#" class="text-decoration-none me-2" title="DOI">
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                  <a href="#" class="text-decoration-none" title="PDF">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </a>
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">Solar Cell Fabrication &amp; Testing</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-fill teal" data-width="88"></div></div>
         </div>
 
-        <!-- Publication 2 -->
-        <div class="col-md-6 col-lg-4" data-year="2023">
-          <div class="card pub-card h-100 shadow-sm">
-            <img src="assets/img/publications/pub2.jpg" class="pub-image card-img-top" alt="Publication Title" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/img/publications/pub2.jpg">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Machine Learning in Material Science</h5>
-              <p class="card-text">Application of neural networks to predict material properties and accelerate discovery processes.</p>
-              <!--
-              <div class="mt-auto">
-                <span class="badge bg-success pub-badge">Conference</span>
-                <span class="badge bg-secondary pub-badge">2023</span>
-              </div>
-              -->
-            </div>
-            <div class="card-footer bg-transparent">
-              <div class="d-flex justify-content-between">
-                <a href="ml.html" class="btn btn-sm btn-outline-primary">See ML Apps </a>
-                <!--
-                <div>
-                  <a href="#" class="text-decoration-none me-2" title="DOI">
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                  <a href="#" class="text-decoration-none" title="PDF">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </a>
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
+        <!-- Computational -->
+        <h6 class="fw-bold mb-3 mt-4" style="color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;font-size:.75rem;">Computational</h6>
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">DFT (CASTEP / Gaussian / Quantum ESPRESSO)</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">Python / ML / Deep Learning</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">Crystal Structure Analysis &amp; Rietveld Refinement</span><span class="skill-pct">93%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="93"></div></div>
         </div>
 
-        <!-- Publication 3 -->
-        <div class="col-md-6 col-lg-4" data-year="2023">
-          <div class="card pub-card h-100 shadow-sm">
-            <img src="assets/img/publications/pub3.jpg" class="pub-image card-img-top" alt="Publication Title" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/img/publications/pub3.jpg">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Nanostructured Catalysts for Renewable Energy</h5>
-              <p class="card-text">Development of efficient catalysts using nanostructured materials for hydrogen production.</p>
-              <!--
-              <div class="mt-auto">
-                <span class="badge bg-primary pub-badge">Journal Article</span>
-                <span class="badge bg-secondary pub-badge">2023</span>
-              </div>
-              -->
-            </div>
-            <div class="card-footer bg-transparent">
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
-                <!--
-                <div>
-                  <a href="#" class="text-decoration-none me-2" title="DOI">
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                  <a href="#" class="text-decoration-none" title="PDF">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </a>
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
+        <!-- Software -->
+        <h6 class="fw-bold mb-3 mt-4" style="color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;font-size:.75rem;">Tools &amp; Software</h6>
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">Materials Studio / VESTA / CrystalMaker</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-fill amber" data-width="88"></div></div>
         </div>
-
-        <!-- Add more publication cards as needed -->
+        <div class="skill-bar-wrap">
+          <div class="skill-meta"><span class="skill-name">Origin / MATLAB / Statistical Analysis</span><span class="skill-pct">82%</span></div>
+          <div class="skill-track"><div class="skill-fill amber" data-width="82"></div></div>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Image Modal -->
-    <!--
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imageModalLabel">Publication Image</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- ================================================
+     RESEARCH ACTIVITY (Publications)
+     ================================================ -->
+<section class="section-wrapper" id="publications">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <div>
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-heading mb-0">Research <span>Activity</span></h2>
+      </div>
+      <a href="https://scholar.google.com/citations?hl=en&user=fvLZ67wAAAAJ&sortby=pubdate" target="_blank" class="btn-see-all">
+        View All Publications <i class="bi bi-arrow-up-right ms-1"></i>
+      </a>
+    </div>
+
+    <div class="row g-4" data-stagger id="publications-container">
+
+      <!-- Card 1: Synthesis & Characterization -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card pub-card shadow-sm border-0">
+          <div class="pub-image-wrap">
+            <img src="assets/img/publications/pub4.jpg" class="pub-image" alt="Synthesis and Characterization">
           </div>
-          <div class="modal-body text-center">
-            <img src="" class="modal-image" alt="Publication image in full size">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Synthesis &amp; Characterization</h5>
+            <p class="card-text">Organic/inorganic compounds, complexes, MOFs, COFs, and polymers — characterized via a comprehensive analytical toolkit.</p>
+            <p class="card-text" style="font-size:0.8rem;color:var(--text-muted);">XRD · Raman · FTIR · NMR · UV-Vis · PL · TRPL · AFM · TGA · SEM · XPS · GC-MS · HPLC</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-pub">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Crystallography -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card pub-card shadow-sm border-0">
+          <div class="pub-image-wrap">
+            <img src="assets/img/publications/pub5.jpg" class="pub-image" alt="Crystallography">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Crystallography &amp; Crystal Structure Solving</h5>
+            <p class="card-text">Single-crystal and powder X-ray diffraction, Rietveld refinement for 0D, 1D, 2D, and 3D materials — revealing atomic-scale architecture.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-pub">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Computational DFT -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card pub-card shadow-sm border-0">
+          <div class="pub-image-wrap">
+            <img src="assets/img/publications/pub6.jpg" class="pub-image" alt="Computational DFT">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Computational DFT &amp; Molecular Dynamics</h5>
+            <p class="card-text">High-level DFT calculations and MD simulations using CASTEP, Gaussian, and Quantum ESPRESSO on both Windows and Linux platforms.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-pub">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Photovoltaics -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card pub-card shadow-sm border-0">
+          <div class="pub-image-wrap">
+            <img src="assets/img/publications/pub1.jpg" class="pub-image" alt="Advanced Materials for Photovoltaics">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Advanced Materials for Photovoltaic Applications</h5>
+            <p class="card-text">Exploring novel perovskite and dye-sensitized solar cell architectures to push the boundaries of solar energy conversion efficiency.</p>
+          </div>
+          <div class="card-footer">
+            <a href="tpa-dssc.html" class="btn-pub">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Machine Learning -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card pub-card shadow-sm border-0">
+          <div class="pub-image-wrap">
+            <img src="assets/img/publications/pub2.jpg" class="pub-image" alt="Machine Learning in Materials Science">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Machine Learning in Materials Science</h5>
+            <p class="card-text">Neural network models that predict material properties and dramatically accelerate the discovery and optimization of functional materials.</p>
+          </div>
+          <div class="card-footer">
+            <a href="ml.html" class="btn-pub">See ML Apps →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Nanostructured Catalysts -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card pub-card shadow-sm border-0">
+          <div class="pub-image-wrap">
+            <img src="assets/img/publications/pub3.jpg" class="pub-image" alt="Nanostructured Catalysts for Renewable Energy">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nanostructured Catalysts for Renewable Energy</h5>
+            <p class="card-text">Development of efficient nanoscale catalysts for solar-driven hydrogen production and photocatalytic degradation of environmental pollutants.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-pub">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     GRANTS & TIMELINE
+     ================================================ -->
+<section class="section-wrapper alt-bg" id="grants">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5" data-animate="fade-right">
+        <div class="section-label">Funding &amp; Projects</div>
+        <h2 class="section-heading">Grants &amp; <span>Collaborations</span></h2>
+        <div class="section-divider"></div>
+        <p style="color:var(--text-secondary);">
+          Secured competitive funding from Egyptian and European agencies, leading projects at the intersection of materials science, renewable energy, and circular economy.
+        </p>
+      </div>
+
+      <div class="col-lg-7" data-animate="fade-left">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 – 2025 · EU NextGeneration</div>
+            <div class="timeline-title">3GPV-4INDUSTRY Project</div>
+            <div class="timeline-sub">Development of efficient third-generation photovoltaic materials for industrial applications.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 – 2024 · ASRT Egypt</div>
+            <div class="timeline-title">Precious Metals Recovery from Urban Waste</div>
+            <div class="timeline-sub">Circular economy approach to recover critical metals from electronic and urban waste streams.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 – 2024 · ASRT Egypt</div>
+            <div class="timeline-title">Recycling Old Acid Batteries into Solar Cells</div>
+            <div class="timeline-sub">Transforming end-of-life lead-acid batteries into perovskite solar cell precursors.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 – 2023 · ASRT Egypt (Bedaya)</div>
+            <div class="timeline-title">Perovskite Solar Cells &amp; Machine Learning</div>
+            <div class="timeline-sub">Supervised 5 students in integrating AI-guided optimization into perovskite device fabrication.</div>
           </div>
         </div>
       </div>
     </div>
-    -->
+  </div>
+</section>
 
-    <footer class="mt-5 border-top">
-      <div class="container py-4 text-muted d-flex flex-wrap justify-content-between align-items-center">
-        <span>© <span id="year"></span> Dr. Mohamed Elsenety — All rights reserved.</span>
-        <span class="social-links">
-          <a href="" class="me-3" target="_blank" title="Google Scholar">
-            <i class="bi bi-google google-scholar-icon me-1"></i> Google Scholar
-          </a>
-          <a href="" class="me-3" target="_blank" title="ORCID">
-            <i class="bi bi-person-circle orcid-icon me-1"></i> ORCID
-          </a>
-          <a href="" class="me-3" target="_blank" title="Scopus">
-            <i class="bi bi-journal scopus-icon me-1"></i> Scopus
-          </a>
-          <a href="" target="_blank" title="ResearchGate">
-            <i class="bi bi-mortarboard researchgate-icon me-1"></i> ResearchGate
-          </a>
-        </span>
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-4">
+        <div class="footer-brand">Dr. Mohamed Elsenety</div>
+        <div class="footer-tagline">Materials Science · DFT · Machine Learning</div>
+        <div class="footer-tagline mt-1">
+          <i class="bi bi-building me-1"></i> NCSR "Demokritos", Athens &amp; Al-Azhar University, Cairo
+        </div>
       </div>
-    </footer>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Navigation</h6>
+        <ul class="list-unstyled mb-0" style="font-size:.875rem;">
+          <li class="mb-1"><a href="index.html" style="color:var(--text-secondary);text-decoration:none;" class="hover-primary">Home</a></li>
+          <li class="mb-1"><a href="cv.html" style="color:var(--text-secondary);text-decoration:none;">Curriculum Vitae</a></li>
+          <li class="mb-1"><a href="publications.html" style="color:var(--text-secondary);text-decoration:none;">Publications</a></li>
+          <li class="mb-1"><a href="gallery.html" style="color:var(--text-secondary);text-decoration:none;">Gallery</a></li>
+          <li class="mb-1"><a href="ml.html" style="color:var(--text-secondary);text-decoration:none;">ML Applications</a></li>
+          <li class="mb-1"><a href="contact.html" style="color:var(--text-secondary);text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-bold mb-3" style="color:var(--text-primary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;">Connect</h6>
+        <div class="footer-social d-flex gap-2 flex-wrap">
+          <a href="https://scholar.google.com/citations?user=fvLZ67wAAAAJ" target="_blank" title="Google Scholar"><i class="bi bi-google"></i></a>
+          <a href="https://orcid.org/0000-0001-5107-5959" target="_blank" title="ORCID"><i class="bi bi-person-circle"></i></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57188750324" target="_blank" title="Scopus"><i class="bi bi-journal"></i></a>
+          <a href="https://www.researchgate.net/profile/Mohamed-Elsenety" target="_blank" title="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+          <a href="contact.html" title="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © <span id="year"></span> Dr. Mohamed Mahmoud Elsenety — All rights reserved. &nbsp;·&nbsp;
+      <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-      // Set current year in footer
-      document.getElementById('year').textContent = new Date().getFullYear();
-      
-      // Publication filtering
-      document.getElementById('pubFilter').addEventListener('change', function() {
-        const year = this.value;
-        const publications = document.querySelectorAll('#publications-container > div');
-        
-        publications.forEach(pub => {
-          if (year === 'all' || pub.getAttribute('data-year') === year) {
-            pub.style.display = 'block';
-          } else {
-            pub.style.display = 'none';
-          }
-        });
-      });
-      
-      // Image modal functionality
-      const imageModal = document.getElementById('imageModal');
-      imageModal.addEventListener('show.bs.modal', function(event) {
-        const button = event.relatedTarget;
-        const imageUrl = button.getAttribute('data-bs-image');
-        const modalImage = imageModal.querySelector('.modal-image');
-        modalImage.src = imageUrl;
-      });
-      
-      // Theme toggle functionality (if not already in main.js)
-      const themeToggle = document.getElementById('themeToggle');
-      const htmlElement = document.documentElement;
-      
-      if (localStorage.getItem('theme') === 'dark') {
-        htmlElement.setAttribute('data-bs-theme', 'dark');
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+  // ---------- Year ----------
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---------- Theme toggle ----------
+  const htmlEl = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  if (localStorage.getItem('theme') === 'dark') {
+    htmlEl.setAttribute('data-bs-theme', 'dark');
+  }
+  themeToggle.addEventListener('click', () => {
+    const next = htmlEl.getAttribute('data-bs-theme') === 'light' ? 'dark' : 'light';
+    htmlEl.setAttribute('data-bs-theme', next);
+    localStorage.setItem('theme', next);
+  });
+
+  // ---------- Navbar scroll effect ----------
+  window.addEventListener('scroll', () => {
+    document.getElementById('mainNav').classList.toggle('shadow', window.scrollY > 20);
+  });
+
+  // ---------- Animated counter ----------
+  function animateCounter(el, target, duration = 1800) {
+    let start = 0;
+    const step = target / (duration / 16);
+    const tick = () => {
+      start = Math.min(start + step, target);
+      el.textContent = Math.round(start) + (target >= 100 ? '+' : '');
+      if (start < target) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  // ---------- Intersection Observer (scroll animations + counters + skill bars) ----------
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+
+      // Single element animation
+      if (el.hasAttribute('data-animate')) {
+        el.classList.add('animated');
+        observer.unobserve(el);
       }
-      
-      themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-bs-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
-        htmlElement.setAttribute('data-bs-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-      });
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      // Staggered children
+      if (el.hasAttribute('data-stagger')) {
+        Array.from(el.children).forEach((child, i) => {
+          setTimeout(() => child.classList.add('animated'), i * 100);
+        });
+        observer.unobserve(el);
+      }
+
+      // Counter
+      if (el.hasAttribute('data-count')) {
+        animateCounter(el, parseInt(el.dataset.count));
+        observer.unobserve(el);
+      }
+
+      // Skill bars
+      if (el.classList.contains('skill-fill')) {
+        el.style.width = el.dataset.width + '%';
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  // Observe everything
+  document.querySelectorAll('[data-animate],[data-stagger],[data-count],[class*="skill-fill"]').forEach(el => observer.observe(el));
+
+  // ---------- Typewriter effect (optional hero subtitle) ----------
+  // Already handled via CSS animation
+</script>
+
 <script src="assets/js/main.js"></script>
-    
-  </body>
+</body>
 </html>
